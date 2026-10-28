@@ -1,7 +1,7 @@
 # Leif Nevener — single-page site specification
 
 Status: implementation-ready; mobile visual proof required before full implementation approval.
-Updated: 2026-10-28
+Updated: 2026-10-28 (mobile proof refinement; full visual approval pending)
 
 ## Purpose and audience
 
@@ -24,7 +24,7 @@ Follow root DESIGN.md for the established cream, stone, charcoal, turquoise, amb
 - Center the page content with a maximum width of 800px including its internal gutters. Use approximately 20px mobile gutters, increasing to 32px at wider widths. At 320px, reduce gutters if needed to preserve usable controls.
 - No alternate desktop columns or navigation pattern is required. Backgrounds may span the viewport; content follows the shared centered column.
 - Start body copy at 16px or larger with comfortable line height; biography text should be around 50–65 characters per line at wide widths. Establish final type scale in the mobile visual proof.
-- Use approximately 64–80px between major mobile sections and generous footer padding. Avoid decorative cards, repeated badges, heavy borders, and competing visual motifs.
+- Use approximately 96–104px between major mobile sections and generous footer padding, refining by visual review. Avoid decorative cards, repeated badges, heavy borders, and competing visual motifs.
 - At 320–430px viewport widths, every label, logo, date, and name remains readable without horizontal scrolling or clipped lettering.
 
 ## Hero
@@ -37,10 +37,10 @@ Use the existing layered portrait from output/imagegen/IMGP0627-parallax/:
 
 Use README.md and preview.html in that directory as alignment references. Preserve the grounded seated figure and subtle movement. The existing assets include generated/reconstructed photographic details; review face, hands, guitar, and cutout edges before release.
 
-- Center an oval portrait composition; keep the musician's face and guitar visible at narrow widths.
-- Place "Songs to slow down to" on a static SVG text path hugging the upper oval border. Use DM Sans and retain an accessible text equivalent.
+- Center a slightly zoomed portrait composition with an oval upper silhouette and a horizontal cream fade that finishes above the knees; keep the musician's face and guitar visible at narrow widths.
+- Place "Songs to slow down to" on a static SVG text path with breathing room above the upper oval border. Use DM Sans and retain an accessible text equivalent.
 - Place "Leif Nevener" in Allura across the lower foreground, overlapping the oval. Ensure contrast with a localized soft cream transition or restrained shadow if necessary. Do not cover the face or essential guitar detail.
-- Beneath the name: first row Cash App and Venmo; second row Instagram, Facebook, and Spotify, in that order. Use recognizable vector logos, small visible text labels, and accessible link names. Keep at least 44 by 44 CSS-pixel touch targets with sufficient gaps.
+- Leave a generous gap beneath the name before the links. First row: Instagram, Facebook, and Spotify, in that order, with recognizable vector logos and small visible text labels. Second row: Cash App and Venmo as bare recognizable vector icons, without button fills or visible text labels, retaining accessible link names. Keep at least 44 by 44 CSS-pixel touch targets with sufficient gaps.
 - Blank URLs hide their links and re-center the remaining items. Never render dead links or placeholder destinations. Validate configured URLs as HTTPS links to their intended services; use normal web links rather than relying exclusively on app-only schemes.
 - The hero must not force a full-screen height or hide upcoming shows behind excessive whitespace. Prioritize the portrait, legible name, and usable action rows over fitting everything into an arbitrary viewport height.
 

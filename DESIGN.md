@@ -41,7 +41,7 @@ Use a warm light scheme inspired by IMGP0627: weathered porch paint, turquoise m
 
 - Use Allura exclusively for "Leif Nevener" in the hero. Use DM Sans for every other text role.
 - Design mobile first. Center the same composition on desktop in an 800px maximum content column, including its gutters. Background surfaces may span the viewport. Dedicated desktop refinement is a later pass.
-- The hero places "Songs to slow down to" along the oval's upper border and the handwritten name across its lower foreground. Place Cash App and Venmo in the first action row, then Instagram, Facebook, and Spotify in the second.
+- The hero places "Songs to slow down to" with air above the oval's upper border and the handwritten name across its lower foreground. Zoom the portrait slightly and use a horizontal cream fade that finishes above the knees, retaining the oval upper silhouette. Leave a generous gap below the name. Place Instagram, Facebook, and Spotify in the first action row, then bare Cash App and Venmo icons in the second; the payment links have accessible names without visible labels or button fills.
 - The name writes once on entry; the portrait uses very small ambient movement. Keep links immediately usable, provide a continuous-motion pause control, and use a completed, still composition for reduced motion.
 - Maintain a breathable, minimal, intimate sunrise atmosphere. The oval portrait and handwriting are the principal expressive moment; the larger footer adds a small fish loop and an inspirational quote.
 - Full page behavior and acceptance criteria are in [.scratch/site-launch/spec.md](.scratch/site-launch/spec.md).
@@ -57,3 +57,7 @@ Use a warm light scheme inspired by IMGP0627: weathered porch paint, turquoise m
 ## Reference preview
 
 The local palette study is [palette-preview.html](output/imagegen/IMGP0627-parallax/palette-preview.html). It includes the color strip, live swatch controls, CSS export, and an illustrative page layout. The palette above matches its saved light-mode defaults; page copy and layout remain exploratory.
+
+## Mobile proof refinement - 2026-10-28
+
+Use generous, deliberate spacing and quiet controls so the portrait, lettering, and later restrained motion remain the expressive moments. The user accepted the show table treatment; preserve it. Increase room around the tagline, between the name and icon group, and between major sections. This updates the initial row order and button treatment; full visual approval is still pending.

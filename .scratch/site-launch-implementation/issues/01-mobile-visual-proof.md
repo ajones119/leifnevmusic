@@ -9,7 +9,7 @@
 **Source:** [Site launch specification](../../site-launch/spec.md).
 
 - [x] Present a runnable proof and captured evidence at 390px covering the oval layered portrait, face and guitar visibility, Allura name, DM Sans curved tagline and body text, warm palette, and chosen type scale.
-- [x] Show the complete name with readable contrast, tip row followed by social row, usable touch targets, and no functional-link delay. Use real configured destinations when available; hide missing links. Any illustrative account controls are clearly identified and never point to invented destinations.
+- [x] Show the complete name with readable contrast, social row followed by bare payment icons, usable touch targets, and no functional-link delay. Use real configured destinations when available; hide missing links. Any illustrative account controls are clearly identified and never point to invented destinations.
 - [x] Include representative shows, portrait/biography placeholders, section spacing, and fish/quote footer so the whole mobile composition can be reviewed. Samples and placeholders are clearly identified.
 - [x] Check 320px and 430px for overflow, clipping, overlap, label readability, and table wrapping; preserve the centered 800px maximum composition at wider widths.
 - [x] Review the layered photograph's face, hands, guitar, and cutout edges; record concerns for release review. Show still/completed-name behavior without requiring production motion implementation in this ticket.
