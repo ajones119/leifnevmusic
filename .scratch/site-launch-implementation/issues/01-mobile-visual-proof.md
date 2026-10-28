@@ -1,0 +1,25 @@
+# 01: Mobile visual proof and approval
+
+**Status:** ready-for-agent
+
+**What to build:** A reviewable mobile composition for Leif Nevener's artist page that settles the visual treatment before complete implementation. Follow the source specification and established design direction.
+
+**Blocked by:** None (first milestone; can start when implementation is requested).
+
+**Source:** [Site launch specification](../../site-launch/spec.md).
+
+- [ ] Present a runnable proof and captured evidence at 390px covering the oval layered portrait, face and guitar visibility, Allura name, DM Sans curved tagline and body text, warm palette, and chosen type scale.
+- [ ] Show the complete name with readable contrast, tip row followed by social row, usable touch targets, and no functional-link delay. Use real configured destinations when available; hide missing links. Any illustrative account controls are clearly identified and never point to invented destinations.
+- [ ] Include representative shows, portrait/biography placeholders, section spacing, and fish/quote footer so the whole mobile composition can be reviewed. Samples and placeholders are clearly identified.
+- [ ] Check 320px and 430px for overflow, clipping, overlap, label readability, and table wrapping; preserve the centered 800px maximum composition at wider widths.
+- [ ] Review the layered photograph's face, hands, guitar, and cutout edges; record concerns for release review. Show still/completed-name behavior without requiring production motion implementation in this ticket.
+- [ ] Record the proof location, reviewed revision, screenshots, and width-check results under Comments.
+- [ ] Obtain and record the user's explicit approval of that actual visual proof under Comments. Revisions requested by the user are addressed before this checkbox is checked.
+
+## Approval gate
+
+Do not mark this ticket complete or start 02 or 03 until explicit user approval of the proof is recorded. Producing screenshots, passing checks, or receiving approval of this ticket breakdown does not satisfy this gate. If the proof is ready but approval is pending, set Status to needs-info and leave it incomplete.
+
+## Comments
+
+- 2026-10-28: Breakdown approved for publication. Visual proof has not been built or approved. Implementation must be requested separately.
