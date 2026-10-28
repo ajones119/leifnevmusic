@@ -1,0 +1,6 @@
+{
+  "name": "leif-nevener-visual-proof",
+  "private": true,
+  "type": "module",
+  "scripts": { "proof": "node proof/server.mjs" }
+}
