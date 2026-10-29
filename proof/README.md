@@ -31,3 +31,7 @@ Visual evidence and viewport results are recorded in ticket 01 after browser rev
 ## Revision 02
 
 Requested 2026-10-28: closer portrait with the lower image fading out before the knees, more air around the tagline, a larger pause between the name and controls, social links first, and icon-only payment links. Major section spacing and footer padding are expanded; the show table treatment is preserved. No motion was added. Evidence for this revision is in `.scratch/site-launch-implementation/evidence/revision-02/`; the original captures remain available for comparison. User visual approval remains pending.
+
+## Revision 03
+
+The photo group moves down 10px and the portrait composition grows from a 360/422 to a 360/444 ratio. The curved tagline grows from 16px to 19px in SVG design space. The name moves 34px upward relative to the composition bottom, overlapping the extended lower fade. The icon group preserves its visual separation from the name. The scene is clipped below the completed fade so its invisible lower box cannot paint over later controls. Evidence is in `.scratch/site-launch-implementation/evidence/revision-03/`. Approval is pending; no downstream implementation started.

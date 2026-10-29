@@ -61,3 +61,7 @@ The local palette study is [palette-preview.html](output/imagegen/IMGP0627-paral
 ## Mobile proof refinement - 2026-10-28
 
 Use generous, deliberate spacing and quiet controls so the portrait, lettering, and later restrained motion remain the expressive moments. The user accepted the show table treatment; preserve it. Increase room around the tagline, between the name and icon group, and between major sections. This updates the initial row order and button treatment; full visual approval is still pending.
+
+### Mobile proof revision 03
+
+Shift the photo framing slightly downward and lengthen the portrait a little. Increase the curved DM Sans tagline from 16 to 19 design-space pixels. Allow the Allura name to overlap the lower photographic fade, retaining the established breathing room before the icons. Visual approval remains pending.
