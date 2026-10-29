@@ -26,17 +26,16 @@ function enhanceDepth() {
     elapsed += dt;
     // Cap the desktop amplitude, scaling down further on narrow screens.
     const scale = Math.min(frame!.clientWidth / 460, 1);
-    const targetX = (Math.sin(elapsed * 0.48) * 1.8 + pointerX * 1.2) * scale;
-    const targetY = (Math.sin(elapsed * 0.36) * 1.1 + pointerY * 0.8) * scale;
+    const targetX = (Math.sin(elapsed * 0.48) * 0.9 + pointerX * 0.6) * scale;
+    const targetY = (Math.sin(elapsed * 0.36) * 0.55 + pointerY * 0.4) * scale;
     const ease = 1 - Math.exp(-dt * 4);
     x += (targetX - x) * ease;
     y += (targetY - y) * ease;
     subject!.style.transform = `translate3d(${x.toFixed(3)}px, ${y.toFixed(3)}px, 0)`;
-    // Float the photograph as one object; keep its architecture and paint together.
+    // The oversized scene drifts behind a stationary clipping window and border.
     const floatX = Math.sin(elapsed * 0.39) * 2.5 * scale;
     const floatY = Math.sin(elapsed * 0.52) * 5.5 * scale;
-    const tilt = Math.sin(elapsed * 0.31) * 0.22 * scale;
-    photograph!.style.transform = `translate3d(${floatX.toFixed(3)}px, ${floatY.toFixed(3)}px, 0) rotate(${tilt.toFixed(3)}deg)`;
+    photograph!.style.transform = `translate3d(${floatX.toFixed(3)}px, ${floatY.toFixed(3)}px, 0)`;
     animation = requestAnimationFrame(tick);
   }
 

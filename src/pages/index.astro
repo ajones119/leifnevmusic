@@ -63,12 +63,14 @@ const tipLinks = [
     </svg>
     <main class="page-column">
       <header class="hero" aria-labelledby="artist-name">
-        <div class="portrait-composition" data-depth-float>
+        <div class="portrait-composition">
           <div class="depth-frame" data-depth-frame>
             <div class="depth-art" role="img" aria-label={site.media.heroAlt}>
+              <div class="depth-drift" data-depth-float>
               <div class="depth-crop">
                 <div class="depth-canvas bridge-plane"><img src={site.media.heroBackground} srcset={site.media.heroBackgroundSrcSet} sizes="(max-width: 800px) 100vw, 800px" alt="" width="1024" height="1536" fetchpriority="high" /></div>
                 <div class="depth-canvas musician-plane" data-depth-subject><img src={site.media.heroMusician} srcset={site.media.heroMusicianSrcSet} sizes="(max-width: 800px) 88vw, 704px" alt="" width="1024" height="1536" /></div>
+              </div>
               </div>
             </div>
           </div>
