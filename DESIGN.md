@@ -91,3 +91,7 @@ The owner accepted the layer study at its slower speed. Use the exact study tran
 ### Scissortail footer accent — 2026-10-29
 
 Replace the decorative fish with the single-cycle scissortail loop and transparent poster from wip-assets/scissortail-loop-handoff.md. Use public/media/scissortail-loop.webm and scissortail-still.png at the existing restrained footer size. Normal blend mode preserves the supplied alpha and colours. Keep lazy loading, muted inline looping, still-until-playing, reduced-motion fallback and hidden/offscreen suspension. The handoff notes a small generated pose difference at the join; no new frame interpolation or image editing was performed.
+
+### Static wheat bottom edge — 2026-10-29
+
+A decorative wheat strip follows all footer content outside the800px column and meets the true document bottom. Use the selected transparent wheat-footer-tile.png unchanged, horizontally repeated at its3:1 ratio, height144px on mobile and192px from900px. Preserve weathered cream through its alpha. No wheat animation, blending, opacity adjustment, panel or text overlap; scissortail remains the footer animated accent. Footer bottom padding is replaced by a24px gap before the strip. A1px top clip suppresses a raster-edge artifact in transparent space.
