@@ -1,0 +1,301 @@
+{
+  "url": "http://127.0.0.1:4321/proof/bridge-modern.html",
+  "errors": [],
+  "results": [
+    {
+      "width": 320,
+      "viewport": 320,
+      "scrollWidth": 320,
+      "column": {
+        "left": 0,
+        "width": 320,
+        "right": 320
+      },
+      "illustrativeTargets": [
+        {
+          "label": "Instagram",
+          "width": 64,
+          "height": 58
+        },
+        {
+          "label": "Facebook",
+          "width": 64,
+          "height": 58
+        },
+        {
+          "label": "Spotify",
+          "width": 64,
+          "height": 58
+        },
+        {
+          "label": "Cash App",
+          "width": 48,
+          "height": 48
+        },
+        {
+          "label": "Venmo",
+          "width": 48,
+          "height": 48
+        }
+      ],
+      "fonts": [
+        {
+          "family": "Allura",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "status": "loaded"
+        }
+      ],
+      "images": [
+        {
+          "src": "/output/imagegen/bridge-v2/source.jpeg",
+          "loaded": true
+        },
+        {
+          "src": "/wip-assets/fish-loop-image-transparent.png",
+          "loaded": true
+        }
+      ],
+      "links": [],
+      "overflow": []
+    },
+    {
+      "width": 390,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "column": {
+        "left": 0,
+        "width": 390,
+        "right": 390
+      },
+      "illustrativeTargets": [
+        {
+          "label": "Instagram",
+          "width": 64,
+          "height": 58
+        },
+        {
+          "label": "Facebook",
+          "width": 64,
+          "height": 58
+        },
+        {
+          "label": "Spotify",
+          "width": 64,
+          "height": 58
+        },
+        {
+          "label": "Cash App",
+          "width": 48,
+          "height": 48
+        },
+        {
+          "label": "Venmo",
+          "width": 48,
+          "height": 48
+        }
+      ],
+      "fonts": [
+        {
+          "family": "Allura",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "status": "loaded"
+        }
+      ],
+      "images": [
+        {
+          "src": "/output/imagegen/bridge-v2/source.jpeg",
+          "loaded": true
+        },
+        {
+          "src": "/wip-assets/fish-loop-image-transparent.png",
+          "loaded": true
+        }
+      ],
+      "links": [],
+      "overflow": []
+    },
+    {
+      "width": 430,
+      "viewport": 430,
+      "scrollWidth": 430,
+      "column": {
+        "left": 0,
+        "width": 430,
+        "right": 430
+      },
+      "illustrativeTargets": [
+        {
+          "label": "Instagram",
+          "width": 64,
+          "height": 58
+        },
+        {
+          "label": "Facebook",
+          "width": 64,
+          "height": 58
+        },
+        {
+          "label": "Spotify",
+          "width": 64,
+          "height": 58
+        },
+        {
+          "label": "Cash App",
+          "width": 48,
+          "height": 48
+        },
+        {
+          "label": "Venmo",
+          "width": 48,
+          "height": 48
+        }
+      ],
+      "fonts": [
+        {
+          "family": "Allura",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "status": "loaded"
+        }
+      ],
+      "images": [
+        {
+          "src": "/output/imagegen/bridge-v2/source.jpeg",
+          "loaded": true
+        },
+        {
+          "src": "/wip-assets/fish-loop-image-transparent.png",
+          "loaded": true
+        }
+      ],
+      "links": [],
+      "overflow": []
+    },
+    {
+      "width": 800,
+      "viewport": 800,
+      "scrollWidth": 800,
+      "column": {
+        "left": 0,
+        "width": 800,
+        "right": 800
+      },
+      "illustrativeTargets": [
+        {
+          "label": "Instagram",
+          "width": 64,
+          "height": 58
+        },
+        {
+          "label": "Facebook",
+          "width": 64,
+          "height": 58
+        },
+        {
+          "label": "Spotify",
+          "width": 64,
+          "height": 58
+        },
+        {
+          "label": "Cash App",
+          "width": 48,
+          "height": 48
+        },
+        {
+          "label": "Venmo",
+          "width": 48,
+          "height": 48
+        }
+      ],
+      "fonts": [
+        {
+          "family": "Allura",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "status": "loaded"
+        }
+      ],
+      "images": [
+        {
+          "src": "/output/imagegen/bridge-v2/source.jpeg",
+          "loaded": true
+        },
+        {
+          "src": "/wip-assets/fish-loop-image-transparent.png",
+          "loaded": true
+        }
+      ],
+      "links": [],
+      "overflow": []
+    },
+    {
+      "width": 1440,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "column": {
+        "left": 320,
+        "width": 800,
+        "right": 1120
+      },
+      "illustrativeTargets": [
+        {
+          "label": "Instagram",
+          "width": 64,
+          "height": 58
+        },
+        {
+          "label": "Facebook",
+          "width": 64,
+          "height": 58
+        },
+        {
+          "label": "Spotify",
+          "width": 64,
+          "height": 58
+        },
+        {
+          "label": "Cash App",
+          "width": 48,
+          "height": 48
+        },
+        {
+          "label": "Venmo",
+          "width": 48,
+          "height": 48
+        }
+      ],
+      "fonts": [
+        {
+          "family": "Allura",
+          "status": "unloaded"
+        },
+        {
+          "family": "DM Sans",
+          "status": "loaded"
+        }
+      ],
+      "images": [
+        {
+          "src": "/output/imagegen/bridge-v2/source.jpeg",
+          "loaded": true
+        },
+        {
+          "src": "/wip-assets/fish-loop-image-transparent.png",
+          "loaded": true
+        }
+      ],
+      "links": [],
+      "overflow": []
+    }
+  ]
+}
