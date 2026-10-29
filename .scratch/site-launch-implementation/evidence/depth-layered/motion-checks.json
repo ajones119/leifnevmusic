@@ -1,0 +1,530 @@
+[
+  {
+    "kind": "edge",
+    "moves": true,
+    "titleAnchored": true,
+    "frameAnchored": true,
+    "pauses": true,
+    "resumes": true,
+    "offscreenPauses": true,
+    "hiddenObserved": true,
+    "hiddenPauses": true,
+    "reducedStops": true,
+    "states": {
+      "before": {
+        "transform": "matrix(1, 0, 0, 1, 0.033, 0.015)",
+        "frame": {
+          "x": 20,
+          "y": 32,
+          "width": 350,
+          "height": 388.875,
+          "top": 32,
+          "right": 370,
+          "bottom": 420.875,
+          "left": 20
+        },
+        "title": {
+          "x": 20,
+          "y": 393.96875,
+          "width": 350,
+          "height": 61.421875,
+          "top": 393.96875,
+          "right": 370,
+          "bottom": 455.390625,
+          "left": 20
+        },
+        "label": "Pause motion",
+        "hidden": false
+      },
+      "after": {
+        "transform": "matrix(1, 0, 0, 1, 0.207, 0.095)",
+        "frame": {
+          "x": 20,
+          "y": 32,
+          "width": 350,
+          "height": 388.875,
+          "top": 32,
+          "right": 370,
+          "bottom": 420.875,
+          "left": 20
+        },
+        "title": {
+          "x": 20,
+          "y": 393.96875,
+          "width": 350,
+          "height": 61.421875,
+          "top": 393.96875,
+          "right": 370,
+          "bottom": 455.390625,
+          "left": 20
+        },
+        "label": "Pause motion",
+        "hidden": false
+      },
+      "paused": {
+        "transform": "matrix(1, 0, 0, 1, 0.217, 0.1)",
+        "frame": {
+          "x": 20,
+          "y": 32,
+          "width": 350,
+          "height": 388.875,
+          "top": 32,
+          "right": 370,
+          "bottom": 420.875,
+          "left": 20
+        },
+        "title": {
+          "x": 20,
+          "y": 393.96875,
+          "width": 350,
+          "height": 61.421875,
+          "top": 393.96875,
+          "right": 370,
+          "bottom": 455.390625,
+          "left": 20
+        },
+        "label": "Play motion",
+        "hidden": false
+      },
+      "pausedAfter": {
+        "transform": "matrix(1, 0, 0, 1, 0.217, 0.1)",
+        "frame": {
+          "x": 20,
+          "y": 32,
+          "width": 350,
+          "height": 388.875,
+          "top": 32,
+          "right": 370,
+          "bottom": 420.875,
+          "left": 20
+        },
+        "title": {
+          "x": 20,
+          "y": 393.96875,
+          "width": 350,
+          "height": 61.421875,
+          "top": 393.96875,
+          "right": 370,
+          "bottom": 455.390625,
+          "left": 20
+        },
+        "label": "Play motion",
+        "hidden": false
+      },
+      "resumed": {
+        "transform": "matrix(1, 0, 0, 1, 0.899, -0.184)",
+        "frame": {
+          "x": 20,
+          "y": 32,
+          "width": 350,
+          "height": 388.875,
+          "top": 32,
+          "right": 370,
+          "bottom": 420.875,
+          "left": 20
+        },
+        "title": {
+          "x": 20,
+          "y": 393.96875,
+          "width": 350,
+          "height": 61.421875,
+          "top": 393.96875,
+          "right": 370,
+          "bottom": 455.390625,
+          "left": 20
+        },
+        "label": "Pause motion",
+        "hidden": false
+      },
+      "offscreen": {
+        "transform": "matrix(1, 0, 0, 1, 0.898, -0.171)",
+        "frame": {
+          "x": 20,
+          "y": -968,
+          "width": 350,
+          "height": 388.875,
+          "top": -968,
+          "right": 370,
+          "bottom": -579.125,
+          "left": 20
+        },
+        "title": {
+          "x": 20,
+          "y": -606.03125,
+          "width": 350,
+          "height": 61.421875,
+          "top": -606.03125,
+          "right": 370,
+          "bottom": -544.609375,
+          "left": 20
+        },
+        "label": "Pause motion",
+        "hidden": false
+      },
+      "offscreenAfter": {
+        "transform": "matrix(1, 0, 0, 1, 0.898, -0.171)",
+        "frame": {
+          "x": 20,
+          "y": -968,
+          "width": 350,
+          "height": 388.875,
+          "top": -968,
+          "right": 370,
+          "bottom": -579.125,
+          "left": 20
+        },
+        "title": {
+          "x": 20,
+          "y": -606.03125,
+          "width": 350,
+          "height": 61.421875,
+          "top": -606.03125,
+          "right": 370,
+          "bottom": -544.609375,
+          "left": 20
+        },
+        "label": "Pause motion",
+        "hidden": false
+      },
+      "hidden": {
+        "transform": "matrix(1, 0, 0, 1, 0.777, 0.038)",
+        "frame": {
+          "x": 20,
+          "y": 32,
+          "width": 350,
+          "height": 388.875,
+          "top": 32,
+          "right": 370,
+          "bottom": 420.875,
+          "left": 20
+        },
+        "title": {
+          "x": 20,
+          "y": 393.96875,
+          "width": 350,
+          "height": 61.421875,
+          "top": 393.96875,
+          "right": 370,
+          "bottom": 455.390625,
+          "left": 20
+        },
+        "label": "Pause motion",
+        "hidden": true
+      },
+      "hiddenAfter": {
+        "transform": "matrix(1, 0, 0, 1, 0.777, 0.038)",
+        "frame": {
+          "x": 20,
+          "y": 32,
+          "width": 350,
+          "height": 388.875,
+          "top": 32,
+          "right": 370,
+          "bottom": 420.875,
+          "left": 20
+        },
+        "title": {
+          "x": 20,
+          "y": 393.96875,
+          "width": 350,
+          "height": 61.421875,
+          "top": 393.96875,
+          "right": 370,
+          "bottom": 455.390625,
+          "left": 20
+        },
+        "label": "Pause motion",
+        "hidden": true
+      },
+      "reduced": {
+        "transform": "none",
+        "frame": {
+          "x": 20,
+          "y": 32,
+          "width": 350,
+          "height": 388.875,
+          "top": 32,
+          "right": 370,
+          "bottom": 420.875,
+          "left": 20
+        },
+        "title": {
+          "x": 20,
+          "y": 393.96875,
+          "width": 350,
+          "height": 61.421875,
+          "top": 393.96875,
+          "right": 370,
+          "bottom": 455.390625,
+          "left": 20
+        },
+        "label": "Motion off",
+        "hidden": false
+      }
+    }
+  },
+  {
+    "kind": "layered",
+    "moves": true,
+    "titleAnchored": true,
+    "frameAnchored": true,
+    "pauses": true,
+    "resumes": true,
+    "offscreenPauses": true,
+    "hiddenObserved": true,
+    "hiddenPauses": true,
+    "reducedStops": true,
+    "states": {
+      "before": {
+        "transform": "matrix(1, 0, 0, 1, 0.207, 0.095)",
+        "frame": {
+          "x": 20,
+          "y": 32,
+          "width": 350,
+          "height": 388.875,
+          "top": 32,
+          "right": 370,
+          "bottom": 420.875,
+          "left": 20
+        },
+        "title": {
+          "x": 20,
+          "y": 442.875,
+          "width": 350,
+          "height": 23.09375,
+          "top": 442.875,
+          "right": 370,
+          "bottom": 465.96875,
+          "left": 20
+        },
+        "label": "Pause motion",
+        "hidden": false
+      },
+      "after": {
+        "transform": "matrix(1, 0, 0, 1, 0.42, 0.194)",
+        "frame": {
+          "x": 20,
+          "y": 32,
+          "width": 350,
+          "height": 388.875,
+          "top": 32,
+          "right": 370,
+          "bottom": 420.875,
+          "left": 20
+        },
+        "title": {
+          "x": 20,
+          "y": 442.875,
+          "width": 350,
+          "height": 23.09375,
+          "top": 442.875,
+          "right": 370,
+          "bottom": 465.96875,
+          "left": 20
+        },
+        "label": "Pause motion",
+        "hidden": false
+      },
+      "paused": {
+        "transform": "matrix(1, 0, 0, 1, 0.43, 0.199)",
+        "frame": {
+          "x": 20,
+          "y": 32,
+          "width": 350,
+          "height": 388.875,
+          "top": 32,
+          "right": 370,
+          "bottom": 420.875,
+          "left": 20
+        },
+        "title": {
+          "x": 20,
+          "y": 442.875,
+          "width": 350,
+          "height": 23.09375,
+          "top": 442.875,
+          "right": 370,
+          "bottom": 465.96875,
+          "left": 20
+        },
+        "label": "Play motion",
+        "hidden": false
+      },
+      "pausedAfter": {
+        "transform": "matrix(1, 0, 0, 1, 0.43, 0.199)",
+        "frame": {
+          "x": 20,
+          "y": 32,
+          "width": 350,
+          "height": 388.875,
+          "top": 32,
+          "right": 370,
+          "bottom": 420.875,
+          "left": 20
+        },
+        "title": {
+          "x": 20,
+          "y": 442.875,
+          "width": 350,
+          "height": 23.09375,
+          "top": 442.875,
+          "right": 370,
+          "bottom": 465.96875,
+          "left": 20
+        },
+        "label": "Play motion",
+        "hidden": false
+      },
+      "resumed": {
+        "transform": "matrix(1, 0, 0, 1, 1.13, -0.087)",
+        "frame": {
+          "x": 20,
+          "y": 32,
+          "width": 350,
+          "height": 388.875,
+          "top": 32,
+          "right": 370,
+          "bottom": 420.875,
+          "left": 20
+        },
+        "title": {
+          "x": 20,
+          "y": 442.875,
+          "width": 350,
+          "height": 23.09375,
+          "top": 442.875,
+          "right": 370,
+          "bottom": 465.96875,
+          "left": 20
+        },
+        "label": "Pause motion",
+        "hidden": false
+      },
+      "offscreen": {
+        "transform": "matrix(1, 0, 0, 1, 1.119, -0.072)",
+        "frame": {
+          "x": 20,
+          "y": -968,
+          "width": 350,
+          "height": 388.875,
+          "top": -968,
+          "right": 370,
+          "bottom": -579.125,
+          "left": 20
+        },
+        "title": {
+          "x": 20,
+          "y": -557.125,
+          "width": 350,
+          "height": 23.09375,
+          "top": -557.125,
+          "right": 370,
+          "bottom": -534.03125,
+          "left": 20
+        },
+        "label": "Pause motion",
+        "hidden": false
+      },
+      "offscreenAfter": {
+        "transform": "matrix(1, 0, 0, 1, 1.119, -0.072)",
+        "frame": {
+          "x": 20,
+          "y": -968,
+          "width": 350,
+          "height": 388.875,
+          "top": -968,
+          "right": 370,
+          "bottom": -579.125,
+          "left": 20
+        },
+        "title": {
+          "x": 20,
+          "y": -557.125,
+          "width": 350,
+          "height": 23.09375,
+          "top": -557.125,
+          "right": 370,
+          "bottom": -534.03125,
+          "left": 20
+        },
+        "label": "Pause motion",
+        "hidden": false
+      },
+      "hidden": {
+        "transform": "matrix(1, 0, 0, 1, 0.986, 0.148)",
+        "frame": {
+          "x": 20,
+          "y": 32,
+          "width": 350,
+          "height": 388.875,
+          "top": 32,
+          "right": 370,
+          "bottom": 420.875,
+          "left": 20
+        },
+        "title": {
+          "x": 20,
+          "y": 442.875,
+          "width": 350,
+          "height": 23.09375,
+          "top": 442.875,
+          "right": 370,
+          "bottom": 465.96875,
+          "left": 20
+        },
+        "label": "Pause motion",
+        "hidden": true
+      },
+      "hiddenAfter": {
+        "transform": "matrix(1, 0, 0, 1, 0.986, 0.148)",
+        "frame": {
+          "x": 20,
+          "y": 32,
+          "width": 350,
+          "height": 388.875,
+          "top": 32,
+          "right": 370,
+          "bottom": 420.875,
+          "left": 20
+        },
+        "title": {
+          "x": 20,
+          "y": 442.875,
+          "width": 350,
+          "height": 23.09375,
+          "top": 442.875,
+          "right": 370,
+          "bottom": 465.96875,
+          "left": 20
+        },
+        "label": "Pause motion",
+        "hidden": true
+      },
+      "reduced": {
+        "transform": "none",
+        "frame": {
+          "x": 20,
+          "y": 32,
+          "width": 350,
+          "height": 388.875,
+          "top": 32,
+          "right": 370,
+          "bottom": 420.875,
+          "left": 20
+        },
+        "title": {
+          "x": 20,
+          "y": 442.875,
+          "width": 350,
+          "height": 23.09375,
+          "top": 442.875,
+          "right": 370,
+          "bottom": 465.96875,
+          "left": 20
+        },
+        "label": "Motion off",
+        "hidden": false
+      }
+    }
+  }
+]
