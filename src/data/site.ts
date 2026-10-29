@@ -32,8 +32,8 @@ export const site: SiteConfig = {
     name: 'Leif Nevener', tagline: 'Songs to slow down to',
     description: 'Leif Nevener is a musician based in Oklahoma City.',
     location: { city: 'Oklahoma City', region: 'OK', country: 'US' },
-    bio: { paragraphs: ['Leif Nevener is a musician based in Oklahoma City.', 'A few words about Leif, his music, and what brings him to the stage will live here.'], placeholder: true },
-    portrait: { src: '', alt: 'Portrait of Leif Nevener', width: 1000, height: 800, placeholder: true },
+    bio: { paragraphs: ['Originally from Tulsa and now based in Oklahoma City, Leif Nevener is a guitarist and performer with roots in jazz. His experience spans jazz ensembles and guitar work with Lyric Theatre of Oklahoma, including Beautiful: The Carole King Musical and Pageant.'], placeholder: false },
+    portrait: { src: '/media/portrait-willow.png', alt: 'Leif seated in the grass playing an acoustic guitar beneath a willow tree', width: 880, height: 869, placeholder: false },
   },
   socials: {
     instagram: 'https://www.instagram.com/leif2e/',

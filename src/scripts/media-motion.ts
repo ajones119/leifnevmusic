@@ -5,7 +5,8 @@ const finePointer = matchMedia('(hover: hover) and (pointer: fine)');
 function enhanceDepth() {
   const frame = document.querySelector<HTMLElement>('[data-depth-frame]');
   const subject = document.querySelector<HTMLElement>('[data-depth-subject]');
-  if (!frame || !subject || !('IntersectionObserver' in window)) return;
+  const photograph = document.querySelector<HTMLElement>('[data-depth-float]');
+  if (!frame || !subject || !photograph || !('IntersectionObserver' in window)) return;
 
   let visible = false;
   let animation: number | undefined;
@@ -31,6 +32,11 @@ function enhanceDepth() {
     x += (targetX - x) * ease;
     y += (targetY - y) * ease;
     subject!.style.transform = `translate3d(${x.toFixed(3)}px, ${y.toFixed(3)}px, 0)`;
+    // Float the photograph as one object; keep its architecture and paint together.
+    const floatX = Math.sin(elapsed * 0.39) * 2.5 * scale;
+    const floatY = Math.sin(elapsed * 0.52) * 5.5 * scale;
+    const tilt = Math.sin(elapsed * 0.31) * 0.22 * scale;
+    photograph!.style.transform = `translate3d(${floatX.toFixed(3)}px, ${floatY.toFixed(3)}px, 0) rotate(${tilt.toFixed(3)}deg)`;
     animation = requestAnimationFrame(tick);
   }
 
@@ -42,6 +48,7 @@ function enhanceDepth() {
     if (reducedMotion.matches) {
       x = y = 0;
       subject!.style.removeProperty('transform');
+      photograph!.style.removeProperty('transform');
     }
     if (active()) animation = requestAnimationFrame(tick);
   }

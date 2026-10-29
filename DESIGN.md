@@ -77,3 +77,9 @@ The painted walkway is the user's leading direction. Compare the current inset f
 ## Approved direction - 2026-10-29
 
 The tighter painted bridge hero is approved; continue implementation from proof/bridge-painted-tight.html (232f8b5, evidence 90d7870). This supersedes initial Allura/oval/curved-tagline requirements. Use DM Sans, painted name, hidden semantic H1, no visible caption/tagline or motion button, social-first controls and bare payment icons. Preserve warm palette and table treatment. Production account links must be real or hidden.
+
+### Approved desktop and content refinement — 2026-10-29
+
+The owner selected the framed photograph from the desktop comparison: 560px outer width, 10px cream inset, a fine moss border, square corners and 48px top breathing room at 900px and wider. Mobile keeps the approved edge-to-edge composition. All five social/support icons now have visible labels; unset tipping links remain `/` in preview only. The lower portrait uses the supplied clearer willow/guitar photograph with soft fades on all four edges, and the biography covers Tulsa/OKC, jazz and Lyric Theatre without repeating the footer's slower-song line.
+
+For the requested floaty header feel, the framed photograph drifts as one object (up to 2.5px horizontally, 5.5px vertically and 0.22 degrees of rotation), while the existing smaller musician drift adds depth. Motion is automatic, with pointer response optional. Reduced motion removes both transforms; offscreen/hidden states suspend animation. This refines the earlier subject-only drift.

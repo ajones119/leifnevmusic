@@ -63,7 +63,7 @@ const tipLinks = [
     </svg>
     <main class="page-column">
       <header class="hero" aria-labelledby="artist-name">
-        <div class="portrait-composition">
+        <div class="portrait-composition" data-depth-float>
           <div class="depth-frame" data-depth-frame>
             <div class="depth-art" role="img" aria-label={site.media.heroAlt}>
               <div class="depth-crop">
@@ -75,8 +75,8 @@ const tipLinks = [
           <h1 id="artist-name" class="sr-only">{site.artist.name}</h1>
         </div>
         {(socialLinks.length > 0 || tipLinks.length > 0) && <nav class="actions" aria-label="Follow and support Leif">
-          {socialLinks.length > 0 && <div class="social-row">{socialLinks.map(link => <a class="social" href={link.url || '/'}><svg aria-hidden="true"><use href={`#${link.icon}`} /></svg><span>{link.name}</span></a>)}</div>}
-          {tipLinks.length > 0 && <div class="tip-row">{tipLinks.map(link => <a class="tip" href={link.url || '/'} aria-label={link.name}><svg aria-hidden="true"><use href={`#${link.icon}`} /></svg></a>)}</div>}
+          {socialLinks.length > 0 && <div class="social-row">{socialLinks.map(link => <a class="social" href={link.url || '/'} aria-label={link.name}><svg aria-hidden="true"><use href={`#${link.icon}`} /></svg><span>{link.name}</span></a>)}</div>}
+          {tipLinks.length > 0 && <div class="tip-row">{tipLinks.map(link => <a class="tip" href={link.url || '/'} aria-label={link.name}><svg aria-hidden="true"><use href={`#${link.icon}`} /></svg><span>{link.name}</span></a>)}</div>}
         </nav>}
       </header>
       <section class="shows" aria-labelledby="shows-title">
