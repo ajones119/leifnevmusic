@@ -1,0 +1,13 @@
+# Prepared configuration only; no service is provisioned by this file locally.
+services:
+  - type: web
+    name: leif-nevener-music
+    runtime: static
+    buildCommand: npm ci && npm run build:production
+    staticPublishPath: ./dist
+    autoDeployTrigger: checksPass
+    envVars:
+      - key: NODE_VERSION
+        value: '24'
+      - key: ASTRO_TELEMETRY_DISABLED
+        value: '1'

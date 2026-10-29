@@ -6,6 +6,20 @@ const production = import.meta.env.SITE_RELEASE === 'production';
 const errors = validateSite(site, { production });
 if (errors.length) throw new Error(errors.join('\n'));
 const shows = upcomingShows(site);
+
+const origin = site.siteUrl.replace(/\/$/, '');
+const canonical = origin ? origin + '/' : undefined;
+const sharingImage = origin ? new URL(site.socialImage.src, origin).href : undefined;
+const identity = {
+  '@context': 'https://schema.org', '@type': 'MusicGroup',
+  ...(origin ? { '@id': origin + '/#artist', url: canonical } : {}),
+  name: site.artist.name, description: site.artist.description,
+  ...(sharingImage ? { image: sharingImage } : {}),
+  location: { '@type': 'Place', address: { '@type': 'PostalAddress', addressLocality: site.artist.location.city, addressRegion: site.artist.location.region, addressCountry: site.artist.location.country } },
+  sameAs: Object.values(site.socials).filter(Boolean),
+};
+const identityJson = JSON.stringify(identity).replace(/</g, '\\u003c');
+
 const socialLinks = [
   { name: 'Instagram', icon: 'instagram', url: site.socials.instagram },
   { name: 'Facebook', icon: 'facebook', url: site.socials.facebook },
@@ -21,11 +35,22 @@ const tipLinks = [
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="noindex, nofollow" />
+    <meta name="robots" content={production ? "index, follow" : "noindex, nofollow"} />
     <meta name="description" content={site.seoDescription} />
     <title>{site.seoTitle}</title>
+    {canonical && <link rel="canonical" href={canonical} />}
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={site.seoTitle} />
+    <meta property="og:description" content={site.seoDescription} />
+    {canonical && <meta property="og:url" content={canonical} />}
+    {sharingImage && <><meta property="og:image" content={sharingImage} /><meta property="og:image:alt" content={site.socialImage.alt} /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /></>}
+    <meta name="twitter:card" content={sharingImage ? "summary_large_image" : "summary"} />
+    <meta name="twitter:title" content={site.seoTitle} />
+    <meta name="twitter:description" content={site.seoDescription} />
+    {sharingImage && <><meta name="twitter:image" content={sharingImage} /><meta name="twitter:image:alt" content={site.socialImage.alt} /></>}
+    <script type="application/ld+json" set:html={identityJson} />
     <link rel="icon" href="data:," />
-    <link rel="preload" href="/fonts/DMSans-Variable.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/fonts/DMSans-Latin.woff2" as="font" type="font/woff2" crossorigin />
   </head>
   <body>
     <a class="skip-link" href="#shows-title">Skip to upcoming shows</a>
@@ -42,8 +67,8 @@ const tipLinks = [
           <div class="depth-frame" data-depth-frame>
             <div class="depth-art" role="img" aria-label={site.media.heroAlt}>
               <div class="depth-crop">
-                <div class="depth-canvas bridge-plane"><img src={site.media.heroBackground} alt="" width="1024" height="1536" fetchpriority="high" /></div>
-                <div class="depth-canvas musician-plane" data-depth-subject><img src={site.media.heroMusician} alt="" width="1024" height="1536" /></div>
+                <div class="depth-canvas bridge-plane"><img src={site.media.heroBackground} srcset={site.media.heroBackgroundSrcSet} sizes="(max-width: 800px) 100vw, 800px" alt="" width="1024" height="1536" fetchpriority="high" /></div>
+                <div class="depth-canvas musician-plane" data-depth-subject><img src={site.media.heroMusician} srcset={site.media.heroMusicianSrcSet} sizes="(max-width: 800px) 88vw, 704px" alt="" width="1024" height="1536" /></div>
               </div>
             </div>
           </div>

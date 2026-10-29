@@ -2,7 +2,9 @@
   "name": "leif-nevener-music",
   "private": true,
   "type": "module",
-  "engines": { "node": ">=22.23.4" },
+  "engines": {
+    "node": ">=22.23.4"
+  },
   "scripts": {
     "proof": "node proof/server.mjs",
     "dev": "astro dev --host 127.0.0.1",
@@ -10,7 +12,14 @@
     "preview": "astro preview --host 127.0.0.1",
     "test": "node --test tests/*.test.ts",
     "validate:production": "node scripts/validate-site.ts --production",
-    "build:production": "npm run validate:production && astro build"
+    "build:production": "node scripts/build-production.ts",
+    "check": "tsc --noEmit"
   },
-  "dependencies": { "astro": "7.4.4" }
+  "dependencies": {
+    "astro": "7.4.4"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.6",
+    "typescript": "7.0.2"
+  }
 }

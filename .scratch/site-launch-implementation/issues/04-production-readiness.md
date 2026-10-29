@@ -1,6 +1,6 @@
 # 04: Production readiness and launch verification
 
-**Status:** ready-for-agent
+**Status:** needs-info
 
 **What to build:** Integrate the complete content page and motion enhancements into a verified, production-ready artist site with accurate search/social metadata and a working content deployment and daily rebuild process. Carry out infrastructure and public launch steps only within the user's implementation/deployment authorization.
 
@@ -21,3 +21,7 @@
 ## Comments
 
 - 2026-10-28: Published from the approved breakdown. Implementation, provisioning, and deployment have not started. Blocked by tickets 02 and 03.
+
+- 2026-10-29: Tickets02/03 implemented and locally verified. Production build command now sets release mode itself and fails closed on five missing content gates. Added metadata/MusicGroup, conditional canonical and absolute social image URLs, production robots/sitemap and preview indexing block; verified both preview and isolated synthetic production output without changing the owner config. Added prepared Render blueprint and CI/daily hook workflow (disabled until configured). No GitHub remote, Render service, domain or deploy hook supplied; nothing deployed.
+- Local Lighthouse13.6 mobile simulation (412x823, DPR1.75, 150ms RTT, ~1.6Mbps, CPU4x): performance99, accessibility100, LCP2.115s, CLS0. First run was performance88/LCP3.981s before responsive WebP/font optimization and small-text contrast correction. These are simulated desktop measurements, not field or real-device results. Preview SEO score is reduced intentionally by noindex and absent production origin. All audits and profile details are in ../evidence/implemented-site/.
+- Remaining release requirements: owner's verified show dates or explicit empty listing, final factual biography, lower portrait, production origin, sharing-image approval and likeness review; real iOS/Android checks; GitHub/Render setup, push deployment, daily-run/live-origin verification. Social URLs match owner-provided values; read-only external fetches did not return usable pages. Current preview keeps Cash App and Venmo visible with root links per user request; production omits them until configured. See docs/deployment.md. Ticket04 is incomplete and waiting for these concrete inputs/setup.

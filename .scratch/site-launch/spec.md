@@ -10,7 +10,7 @@ The user approved the tighter painted bridge hero at proof/bridge-painted-tight.
 - Painted bridge background: output/imagegen/bridge-v2/04-bridge-painted-inset-name.png; musician: 02-musician.png. Tight scene crop: translateY(-10px), scale 1.14, origin 0 30%; shorter frame ratio .9, mobile edge-to-edge from page top, desktop centered max 800px.
 - DM Sans throughout, painted name fixed to the bridge; no Allura/SVG handwriting reveal. Keep a screen-reader H1. Below-image name and tagline are hidden per user request; social-first row, bare payment icons second. No visible sample-date label or account-placeholder note.
 - The user removed the visible pause-motion button. Preserve that choice. Honor reduced motion; suspend ambient motion hidden/offscreen, and defer decorative fish media. Production accessibility reporting must not claim a visible pause control exists.
-- Blank real account URLs hide links and recenter remaining controls; never turn the illustrative proof icons into dead production anchors. Preview examples remain marked in data/caption and blocked by production validation.
+- Blank real account URLs hide links and recenter remaining controls in production; at the owner's subsequent request, preview-only missing accounts remain visible with root / links; never turn the illustrative proof icons into dead production anchors. Preview examples remain marked in data/caption and blocked by production validation.
 - This approves the composition and authorizes implementation, not publication of unknown show dates, biographies, final portrait, sharing-image or likeness approvals. Keep preview indexing disabled until content/release inputs are ready.
 
 ## Purpose and audience
