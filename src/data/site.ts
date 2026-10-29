@@ -119,6 +119,9 @@ export function validateSite(config: SiteConfig, options: { production?: boolean
   }
   if (!config.artist.bio.paragraphs.length || config.artist.bio.paragraphs.some(text => !text.trim())) errors.push('artist.bio needs nonempty paragraphs');
   if (!config.artist.portrait.placeholder && (!config.artist.portrait.src || !config.artist.portrait.alt.trim() || config.artist.portrait.width <= 0 || config.artist.portrait.height <= 0)) errors.push('artist.portrait needs an image, alt text and dimensions');
+  const localSocialImage = /^\/(?!\/)[^\s\\?#]+\.(?:avif|gif|jpe?g|png|svg|webp)$/i.test(config.socialImage.src);
+  if (!localSocialImage && !validHttps(config.socialImage.src)) errors.push('socialImage.src must be a root-relative image path or an HTTPS URL');
+  if (!config.socialImage.alt.trim()) errors.push('socialImage.alt needs an image description');
   if (options.production) {
     if (config.shows.some(show => show.sample)) errors.push('Remove or verify all sample shows before production');
     if (config.artist.bio.placeholder) errors.push('Approve the final bio before production');
