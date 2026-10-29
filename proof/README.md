@@ -35,3 +35,7 @@ Requested 2026-10-28: closer portrait with the lower image fading out before the
 ## Revision 03
 
 The photo group moves down 10px and the portrait composition grows from a 360/422 to a 360/444 ratio. The curved tagline grows from 16px to 19px in SVG design space. The name moves 34px upward relative to the composition bottom, overlapping the extended lower fade. The icon group preserves its visual separation from the name. The scene is clipped below the completed fade so its invisible lower box cannot paint over later controls. Evidence is in `.scratch/site-launch-implementation/evidence/revision-03/`. Approval is pending; no downstream implementation started.
+
+## Alternate hero study
+
+Compare `/proof/compare.html` or open `/proof/alternate.html` directly. The original remains at `/proof/mobile.html`. The alternate uses a crisp rounded rectangular photograph, a large medium-weight DM Sans name in deep moss, a straight tagline with normal spacing, and closer icons. All page content below the hero is retained. This is an exploration requested by the user, not a replacement for the established design or approval of downstream work. Account controls remain illustrative and show rows remain unverified samples. Alternate evidence is in `.scratch/site-launch-implementation/evidence/alternate-01/`.

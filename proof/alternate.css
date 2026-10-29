@@ -1,0 +1,74 @@
+/* A separate art-direction study. The original proof remains unchanged. */
+.alternate .hero {
+  padding-top: 32px;
+}
+
+.alternate .portrait-composition {
+  aspect-ratio: auto;
+}
+
+.alternate .scene {
+  position: relative;
+  inset: auto;
+  width: 100%;
+  aspect-ratio: 1.15;
+  border-radius: 8px;
+  clip-path: none;
+  mask-image: none;
+  -webkit-mask-image: none;
+}
+
+.alternate .scene-layers {
+  inset: auto;
+  top: -29%;
+  left: 0;
+  width: 100%;
+  aspect-ratio: 1026 / 1533;
+  transform: scale(1.18);
+  transform-origin: 50% 28%;
+}
+
+.alternate .scene::after {
+  display: none;
+}
+
+.alternate h1 {
+  position: static;
+  transform: none;
+  width: auto;
+  margin: 24px 0 0;
+  color: var(--deep-moss);
+  font: 500 clamp(40px, 12.5vw, 58px) / 1.05 'DM Sans', sans-serif;
+  letter-spacing: -.045em;
+  text-align: left;
+  text-shadow: none;
+}
+
+.alternate .tagline {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.alternate .actions {
+  margin-top: 34px;
+}
+
+.alternate .tip-row {
+  margin-top: 18px;
+}
+
+.alternate .shows {
+  margin-top: 72px;
+}
+
+@media (min-width: 600px) {
+  .alternate .hero {
+    padding-top: 48px;
+  }
+}
