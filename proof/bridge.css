@@ -1,0 +1,16 @@
+/* Use the original bridge photograph; keep each study's type and palette. */
+.bridge-study .scene-layers {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+  transform: none;
+}
+
+.bridge-study .bridge-photo {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 30%;
+}

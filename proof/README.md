@@ -39,3 +39,7 @@ The photo group moves down 10px and the portrait composition grows from a 360/42
 ## Alternate hero study
 
 Compare `/proof/compare.html` or open `/proof/alternate.html` directly. The original remains at `/proof/mobile.html`. The alternate uses a crisp rounded rectangular photograph, a large medium-weight DM Sans name in deep moss, a straight tagline with normal spacing, and closer icons. All page content below the hero is retained. This is an exploration requested by the user, not a replacement for the established design or approval of downstream work. Account controls remain illustrative and show rows remain unverified samples. Alternate evidence is in `.scratch/site-launch-implementation/evidence/alternate-01/`.
+
+## Bridge photo comparison
+
+Open `/proof/bridge-compare.html` for all four photo/type combinations: bridge/script, bridge/modern, porch/script, and porch/modern. Direct bridge pages are `/proof/bridge-script.html` and `/proof/bridge-modern.html`. These use the original `output/imagegen/bridge-v2/source.jpeg` rather than the reconstructed cutout; palette and page content remain the same. The original is 428x640px, adequate for this visual proof but a higher-resolution original would improve sharpness for production. No direction or image selection is implied.
