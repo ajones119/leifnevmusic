@@ -69,3 +69,7 @@ Shift the photo framing slightly downward and lengthen the portrait a little. In
 ### Hero image selection - 2026-10-29
 
 The user generally selected the bridge photograph for the hero. Modern typography is preferred, with two composition studies still under review: a large name crossing the lower photo edge, and lettering placed between the bridge and musician. Keep the existing warm palette. No final typography/composition or full visual-proof approval has been recorded.
+
+### Painted hero framing study - 2026-10-29
+
+The painted walkway is the user's leading direction. Compare the current inset frame with mobile edge-to-edge and taller edge-to-edge options; the user wants more visual weight. Both wider studies remove top/side image gutters and corner rounding, retaining the centered 800px boundary on desktop. Caption/name and tagline below the image are temporarily hidden, and the visible motion button is removed at the user's request. Final framing and full proof approval remain pending.

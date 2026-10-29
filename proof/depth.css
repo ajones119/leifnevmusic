@@ -77,6 +77,12 @@
 }
 
 .bridge-depth .tagline { margin-top: 12px; }
+.bridge-depth h1.sr-only {
+  position: absolute;
+  margin: 0;
+  width: 1px;
+  height: 1px;
+}
 .bridge-depth .actions { margin-top: 38px; }
 .motion-control {
   position: absolute;
@@ -99,3 +105,6 @@
   .musician-plane { transform: none !important; }
   .motion-control:active { transform: none; }
 }
+
+/* Hide the motion control in the current visual review previews. */
+.motion-control { display: none; }

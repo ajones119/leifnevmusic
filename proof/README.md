@@ -51,3 +51,9 @@ Open `/proof/depth-compare.html` for the edge-overlap and lettering-behind-Leif 
 ## Painted walkway comparison
 
 A third option at `/proof/bridge-painted.html` uses an edited copy of the bridge background with LEIF / NEVENER painted onto the concrete in perspective. It retains the existing musician layer and motion behavior; the lettering stays attached to the bridge. The original backgrounds and previous two studies remain unchanged. `/proof/depth-compare.html` now includes all three studies. The artist name also remains readable below the photograph. Provenance is recorded beside `03-bridge-painted-name.png`. User direction/approval is still pending.
+
+## Painted hero width comparison
+
+Open `/proof/painted-width-compare.html`: current inset, `/proof/bridge-painted-wide.html` (edge-to-edge, original proportions), and `/proof/bridge-painted-tall.html` (edge-to-edge, taller 3:4 frame). At 390px these frames are 350x389, 390x433 and 390x520px respectively. Width variants remove the top gutter and corner rounding while text sections retain their gutters. Desktop preserves the 800px page boundary. They share the painted background and existing subtle parallax.
+
+Latest review changes: the below-image name/tagline are hidden in the in-image lettering studies (the H1 remains available to assistive technology), and the visible motion control is hidden at the user's request. These override earlier descriptions of caption/control visibility. Reduced-motion behavior remains active. Selection and full approval are pending.
