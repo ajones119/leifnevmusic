@@ -102,10 +102,12 @@ function enhanceFooterAccent() {
   let failed = false;
   let pending = false;
   let attempt = 0;
+  let replayAt: number | undefined;
+  let replayTimer: number | undefined;
   video.muted = true;
   video.defaultMuted = true;
   video.playsInline = true;
-  video.loop = true;
+  video.loop = false;
   video.preload = 'none';
   const eligible = () => visible && !document.hidden && !reducedMotion.matches && !failed;
   const showStill = () => { delete container.dataset.playing; };
@@ -113,6 +115,8 @@ function enhanceFooterAccent() {
   function stop() {
     attempt++;
     pending = false;
+    if (replayTimer !== undefined) clearTimeout(replayTimer);
+    replayTimer = undefined;
     video!.pause();
     showStill();
   }
@@ -120,6 +124,7 @@ function enhanceFooterAccent() {
   function sync() {
     if (reducedMotion.matches) {
       stop();
+      replayAt = undefined;
       if (video!.hasAttribute('src')) {
         video!.removeAttribute('src');
         video!.load();
@@ -133,6 +138,22 @@ function enhanceFooterAccent() {
     if (!eligible()) {
       stop();
       return;
+    }
+    if (replayAt !== undefined) {
+      const remaining = replayAt - performance.now();
+      if (remaining > 0) {
+        // Keep the completed video's final frame visible during the quiet hold.
+        container!.dataset.playing = 'true';
+        if (replayTimer === undefined) {
+          replayTimer = window.setTimeout(() => {
+            replayTimer = undefined;
+            sync();
+          }, remaining);
+        }
+        return;
+      }
+      replayAt = undefined;
+      video!.currentTime = 0;
     }
     if (!video!.hasAttribute('src') || pending || !video!.paused) return;
     const currentAttempt = ++attempt;
@@ -157,9 +178,14 @@ function enhanceFooterAccent() {
     if (eligible()) container.dataset.playing = 'true';
     else stop();
   });
-  video.addEventListener('pause', showStill);
+  video.addEventListener('pause', () => {
+    if (!video.ended || !eligible()) showStill();
+  });
   video.addEventListener('waiting', showStill);
-  video.addEventListener('ended', showStill);
+  video.addEventListener('ended', () => {
+    replayAt = performance.now() + 3000;
+    sync();
+  });
   video.addEventListener('error', () => { failed = true; stop(); });
   reducedMotion.addEventListener('change', sync);
   document.addEventListener('visibilitychange', sync);

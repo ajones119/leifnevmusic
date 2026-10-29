@@ -23,3 +23,7 @@ The owner subsequently selected the slower layer study. Main config uses `media.
 ## Scissortail replacement
 
 Owner requested the scissortail handoff asset in place of fish. Copied the single-cycle VP9-alpha WebM (640x640,24fps,4.084s,no audio) and PNG poster into public/media. Renamed active media config and data hooks to generic footer names. Playback/fallback gates are unchanged; multiply blending is removed. Live Chromium showed transparent playback, a loaded poster, and repeated playback. TypeScript, seven tests and build passed. Actual iOS/Android verification remains a release check, not claimed here. Historical fish evidence refers to the earlier revision.
+
+## Scissortail replay hold
+
+Owner requested a three-second delay between plays without extending the downloaded clip. Native looping is disabled in markup and controller. On ended, keep the decoded final frame visible and schedule replay after3000ms; seek to zero and play the loaded source. Offscreen/hidden states cancel the pending timer and show the still; returning resumes playback eligibility and honors any remaining elapsed-time delay. Reduced motion clears the replay state and unloads video as before. The media files are unchanged. TypeScript/build passed; live Chromium readbacks confirmed ended+paused with final frame visible, then automatic replay after approximately3s across observed cycles (250ms polling resolution).
