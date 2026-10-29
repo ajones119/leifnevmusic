@@ -19,3 +19,7 @@ Static TypeScript compilation and integrated browser evidence are pending the As
 ## Selected layered mode
 
 The owner subsequently selected the slower layer study. Main config uses `media.heroMotion: layered` with 32s camera, 28s subject and 34s bridge CSS animations matching that proof. The JS layered controller only gates playback for intersection, visibility and reduced motion; it does not run a frame loop or pointer response. No-JS leaves the original still. `media.heroMotion: baseline` restores the earlier fixed-window drift implementation. Earlier amplitude notes in this document describe that retained baseline. Main CSS defines the selected layered paths.
+
+## Scissortail replacement
+
+Owner requested the scissortail handoff asset in place of fish. Copied the single-cycle VP9-alpha WebM (640x640,24fps,4.084s,no audio) and PNG poster into public/media. Renamed active media config and data hooks to generic footer names. Playback/fallback gates are unchanged; multiply blending is removed. Live Chromium showed transparent playback, a loaded poster, and repeated playback. TypeScript, seven tests and build passed. Actual iOS/Android verification remains a release check, not claimed here. Historical fish evidence refers to the earlier revision.

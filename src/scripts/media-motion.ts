@@ -1,4 +1,4 @@
-// Progressive enhancement: the painted bridge and still fish need no script.
+// Progressive enhancement: the painted bridge and still footer accent need no script.
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
 const finePointer = matchMedia('(hover: hover) and (pointer: fine)');
 
@@ -89,10 +89,10 @@ function enhanceDepth() {
   sync();
 }
 
-function enhanceFish() {
-  const container = document.querySelector<HTMLElement>('[data-fish-container]');
-  const video = document.querySelector<HTMLVideoElement>('[data-fish-video]');
-  const still = document.querySelector<HTMLElement>('[data-fish-still]');
+function enhanceFooterAccent() {
+  const container = document.querySelector<HTMLElement>('[data-footer-container]');
+  const video = document.querySelector<HTMLVideoElement>('[data-footer-video]');
+  const still = document.querySelector<HTMLElement>('[data-footer-still]');
   if (!container || !video || !still || !('IntersectionObserver' in window)) return;
   const source = video.dataset.src;
   if (!source) return;
@@ -175,6 +175,6 @@ function enhanceFish() {
 }
 
 enhanceDepth();
-enhanceFish();
+enhanceFooterAccent();
 
 export {};

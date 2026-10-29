@@ -99,9 +99,9 @@ const tipLinks = [
         <div class="bio"><h2 id="about-title">A little about Leif</h2>{site.artist.bio.paragraphs.map(paragraph => <p>{paragraph}</p>)}{site.artist.bio.placeholder && <p class="proof-note">Biography placeholder · final words to come</p>}</div>
       </section>
       <footer class="footer">
-        <div class="fish-container" data-fish-container aria-hidden="true">
-          <img class="fish fish-still" data-fish-still src={site.media.fishStill} alt="" width="320" height="320" loading="lazy" decoding="async" />
-          <video class="fish fish-video" data-fish-video data-src={site.media.fishVideo} preload="none" muted playsinline loop width="320" height="320"></video>
+        <div class="footer-accent-container" data-footer-container aria-hidden="true">
+          <img class="footer-accent footer-accent-still" data-footer-still src={site.media.footerStill} alt="" width="640" height="640" loading="lazy" decoding="async" />
+          <video class="footer-accent footer-accent-video" data-footer-video data-src={site.media.footerVideo} preload="none" muted playsinline loop width="320" height="320"></video>
         </div>
         <p class="quote">{site.footer.quote}</p>
         {site.footer.attribution && <p class="attribution">{site.footer.attribution}</p>}

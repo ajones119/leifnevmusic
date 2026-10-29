@@ -20,7 +20,7 @@ function previewFixture(): SiteConfig {
     siteUrl: '', seoTitle: 'Fixture musician', seoDescription: 'Shows and music.',
     socialImage: { src: '/media/sharing.jpg', alt: 'Musician on a bridge', approved: false },
     footer: { quote: 'A slower song.', attribution: '' },
-    media: { heroBackground: '/background.webp', heroMusician: '/musician.webp', heroAlt: 'Musician on a bridge', fishStill: '/fish.webp', fishVideo: '/fish.webm' },
+    media: { heroBackground: '/background.webp', heroMusician: '/musician.webp', heroAlt: 'Musician on a bridge', footerStill: '/fish.webp', footerVideo: '/fish.webm' },
   };
 }
 

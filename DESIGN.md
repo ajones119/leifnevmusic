@@ -87,3 +87,7 @@ For the requested floaty header feel, use a fixed clipping window and border wit
 ### Approved slow layered motion — 2026-10-29
 
 The owner accepted the layer study at its slower speed. Use the exact study translation paths: 32s camera drift, 28s musician movement and 34s bridge movement, all easing in/out behind the fixed frame and 12px overscan. The paint remains on the bridge plane. The current assets were accepted; do not regenerate them just to complete an abandoned asset-refinement proposal. Layered mode uses CSS animations, paused offscreen/hidden, and removed in reduced motion; no JavaScript leaves a still image. Keep `site.media.heroMotion` as the one-line fallback: `layered` is selected, `baseline` restores option 1. No lab controls appear on the main page.
+
+### Scissortail footer accent — 2026-10-29
+
+Replace the decorative fish with the single-cycle scissortail loop and transparent poster from wip-assets/scissortail-loop-handoff.md. Use public/media/scissortail-loop.webm and scissortail-still.png at the existing restrained footer size. Normal blend mode preserves the supplied alpha and colours. Keep lazy loading, muted inline looping, still-until-playing, reduced-motion fallback and hidden/offscreen suspension. The handoff notes a small generated pose difference at the join; no new frame interpolation or image editing was performed.
