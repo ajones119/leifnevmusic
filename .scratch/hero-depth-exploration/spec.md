@@ -25,3 +25,7 @@ The additive study lives at `/proof/depth-lab.html?study=depth` on the proof ser
 ## Comments
 
 - 2026-10-29: Owner authorized exploring option 3 with an easy fallback. Option 1 checkpointed. Separate baseline/layer-motion lab created; main page and approved assets are unchanged by the experiment. Next step is the alignment/edge audit, followed by targeted asset work rather than increasing movement indiscriminately.
+
+## Selected outcome
+
+2026-10-29: Owner said “perfect, lets lock in layer study version and move on” after the half-speed revision. Promoted the existing-asset study; additional asset regeneration is unnecessary for this selected outcome. The main config now selects `site.media.heroMotion: layered`. Change it to `baseline` and rebuild to restore option 1. Exact timing/paths are carried into main CSS; runtime gates pause animation offscreen/hidden and reduced motion removes it. The lab remains a comparison reference, outside published output. Exploration is complete; launch remains governed by site-launch ticket04.

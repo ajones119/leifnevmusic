@@ -15,3 +15,7 @@ Implemented in `src/scripts/media-motion.ts`, using only the approved data attri
 Read AGENTS.md, domain and issue tracker instructions, approved spec/handoff, DESIGN.md, ticket03, and the TDD skill with testing/mocking references. No glossary or ADR directory exists in this checkout. No implementation-coupled motion tests were added: the pre-agreed motion verification seam is real browser behavior on the integrated page. Parent will validate normal motion, bounded foreground movement, stationary bridge/name, reduced preference changes, hidden document, offscreen hero/footer, failed video, no-JavaScript baseline, and actual mobile-device limitations. This module adds no runtime dependency.
 
 Static TypeScript compilation and integrated browser evidence are pending the Astro scaffold integration. Ticket03 stays in progress until those checks are recorded.
+
+## Selected layered mode
+
+The owner subsequently selected the slower layer study. Main config uses `media.heroMotion: layered` with 32s camera, 28s subject and 34s bridge CSS animations matching that proof. The JS layered controller only gates playback for intersection, visibility and reduced motion; it does not run a frame loop or pointer response. No-JS leaves the original still. `media.heroMotion: baseline` restores the earlier fixed-window drift implementation. Earlier amplitude notes in this document describe that retained baseline. Main CSS defines the selected layered paths.

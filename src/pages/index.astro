@@ -64,7 +64,7 @@ const tipLinks = [
     <main class="page-column">
       <header class="hero" aria-labelledby="artist-name">
         <div class="portrait-composition">
-          <div class="depth-frame" data-depth-frame>
+          <div class="depth-frame" data-depth-frame data-depth-mode={site.media.heroMotion ?? 'baseline'}>
             <div class="depth-art" role="img" aria-label={site.media.heroAlt}>
               <div class="depth-drift" data-depth-float>
               <div class="depth-crop">

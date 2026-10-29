@@ -2,7 +2,7 @@
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
 const finePointer = matchMedia('(hover: hover) and (pointer: fine)');
 
-function enhanceDepth() {
+function enhanceBaselineDepth() {
   const frame = document.querySelector<HTMLElement>('[data-depth-frame]');
   const subject = document.querySelector<HTMLElement>('[data-depth-subject]');
   const photograph = document.querySelector<HTMLElement>('[data-depth-float]');
@@ -66,6 +66,27 @@ function enhanceDepth() {
     visible = entries[0].isIntersecting;
     sync();
   }).observe(frame);
+}
+
+function enhanceDepth() {
+  const frame = document.querySelector<HTMLElement>('[data-depth-frame]');
+  if (!frame || !('IntersectionObserver' in window)) return;
+  if (frame.dataset.depthMode !== 'layered') {
+    enhanceBaselineDepth();
+    return;
+  }
+
+  let visible = false;
+  const sync = () => {
+    frame.dataset.depthRunning = String(visible && !document.hidden && !reducedMotion.matches);
+  };
+  reducedMotion.addEventListener('change', sync);
+  document.addEventListener('visibilitychange', sync);
+  new IntersectionObserver(entries => {
+    visible = entries[0].isIntersecting;
+    sync();
+  }).observe(frame);
+  sync();
 }
 
 function enhanceFish() {

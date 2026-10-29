@@ -12,3 +12,13 @@
 @media(min-width:900px){.hero{padding-top:48px}.portrait-composition{width:560px;margin-inline:auto;padding:10px;border:1px solid color-mix(in srgb,var(--deep-moss) 28%,transparent)}.actions{margin-top:30px}}
 @media(prefers-reduced-motion:reduce){[data-depth-float]{transform:none!important}}
 .depth-drift{position:absolute;inset:-12px}
+
+/* Approved slow layer study; baseline remains selectable in site.media.heroMotion. */
+[data-depth-mode=layered][data-depth-running] .depth-drift{animation:hero-camera 32s ease-in-out infinite paused}
+[data-depth-mode=layered][data-depth-running] .musician-plane{animation:hero-subject 28s ease-in-out infinite paused}
+[data-depth-mode=layered][data-depth-running] .bridge-plane{animation:hero-background 34s ease-in-out infinite paused}
+[data-depth-mode=layered][data-depth-running=true] .depth-drift,[data-depth-mode=layered][data-depth-running=true] .musician-plane,[data-depth-mode=layered][data-depth-running=true] .bridge-plane{animation-play-state:running}
+@keyframes hero-camera{0%,50%,100%{transform:translate3d(0,0,0)}25%{transform:translate3d(2.5px,-5.5px,0)}75%{transform:translate3d(-2.5px,5.5px,0)}}
+@keyframes hero-subject{0%,100%{transform:translate3d(-2px,1px,0)}25%{transform:translate3d(3px,-2px,0)}50%{transform:translate3d(4px,2px,0)}75%{transform:translate3d(-1px,3px,0)}}
+@keyframes hero-background{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(-1.5px,1px,0)}}
+@media(prefers-reduced-motion:reduce){[data-depth-mode=layered] .depth-drift,[data-depth-mode=layered] .musician-plane,[data-depth-mode=layered] .bridge-plane{animation:none!important;transform:none!important}}

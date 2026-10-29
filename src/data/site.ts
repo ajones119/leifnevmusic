@@ -23,7 +23,7 @@ export interface SiteConfig {
   seoDescription: string;
   socialImage: { src: string; alt: string; approved: boolean };
   footer: { quote: string; attribution: string };
-  media: { heroBackground: string; heroMusician: string; heroBackgroundSrcSet?: string; heroMusicianSrcSet?: string; heroAlt: string; fishStill: string; fishVideo: string };
+  media: { heroMotion?: 'baseline' | 'layered'; heroBackground: string; heroMusician: string; heroBackgroundSrcSet?: string; heroMusicianSrcSet?: string; heroAlt: string; fishStill: string; fishVideo: string };
 }
 
 // All editable artist content lives here. Empty account URLs link to / in preview and are omitted in production.
@@ -52,7 +52,7 @@ export const site: SiteConfig = {
   seoDescription: 'Find upcoming shows and follow Oklahoma City musician Leif Nevener.',
   socialImage: { src: '/media/social-preview.jpg', alt: 'Leif Nevener carrying an acoustic guitar on a covered bridge', approved: false },
   footer: { quote: 'Leave a little room\nfor a slower song.', attribution: '' },
-  media: { heroBackground: '/media/hero-background.webp', heroBackgroundSrcSet: '/media/hero-background-640.webp 640w, /media/hero-background-800.webp 800w, /media/hero-background.webp 1024w', heroMusicianSrcSet: '/media/hero-musician-640.webp 640w, /media/hero-musician-800.webp 800w, /media/hero-musician.webp 1024w', heroMusician: '/media/hero-musician.webp', heroAlt: 'Leif carrying his acoustic guitar on a covered bridge.', fishStill: '/media/fish-still.webp', fishVideo: '/media/fish-loop.webm' },
+  media: { heroMotion: 'layered', heroBackground: '/media/hero-background.webp', heroBackgroundSrcSet: '/media/hero-background-640.webp 640w, /media/hero-background-800.webp 800w, /media/hero-background.webp 1024w', heroMusicianSrcSet: '/media/hero-musician-640.webp 640w, /media/hero-musician-800.webp 800w, /media/hero-musician.webp 1024w', heroMusician: '/media/hero-musician.webp', heroAlt: 'Leif carrying his acoustic guitar on a covered bridge.', fishStill: '/media/fish-still.webp', fishVideo: '/media/fish-loop.webm' },
 };
 
 function validHttps(value: string, hosts?: string[]): boolean {
