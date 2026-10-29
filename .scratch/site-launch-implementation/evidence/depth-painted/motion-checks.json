@@ -1,0 +1,266 @@
+[
+  {
+    "kind": "painted",
+    "moves": true,
+    "titleAnchored": true,
+    "frameAnchored": true,
+    "pauses": true,
+    "resumes": true,
+    "offscreenPauses": true,
+    "hiddenObserved": true,
+    "hiddenPauses": true,
+    "reducedStops": true,
+    "states": {
+      "before": {
+        "transform": "matrix(1, 0, 0, 1, 0.097, 0.044)",
+        "frame": {
+          "x": 20,
+          "y": 32,
+          "width": 350,
+          "height": 388.875,
+          "top": 32,
+          "right": 370,
+          "bottom": 420.875,
+          "left": 20
+        },
+        "title": {
+          "x": 20,
+          "y": 442.875,
+          "width": 350,
+          "height": 23.09375,
+          "top": 442.875,
+          "right": 370,
+          "bottom": 465.96875,
+          "left": 20
+        },
+        "label": "Pause motion",
+        "hidden": false
+      },
+      "after": {
+        "transform": "matrix(1, 0, 0, 1, 0.29, 0.133)",
+        "frame": {
+          "x": 20,
+          "y": 32,
+          "width": 350,
+          "height": 388.875,
+          "top": 32,
+          "right": 370,
+          "bottom": 420.875,
+          "left": 20
+        },
+        "title": {
+          "x": 20,
+          "y": 442.875,
+          "width": 350,
+          "height": 23.09375,
+          "top": 442.875,
+          "right": 370,
+          "bottom": 465.96875,
+          "left": 20
+        },
+        "label": "Pause motion",
+        "hidden": false
+      },
+      "paused": {
+        "transform": "matrix(1, 0, 0, 1, 0.3, 0.138)",
+        "frame": {
+          "x": 20,
+          "y": 32,
+          "width": 350,
+          "height": 388.875,
+          "top": 32,
+          "right": 370,
+          "bottom": 420.875,
+          "left": 20
+        },
+        "title": {
+          "x": 20,
+          "y": 442.875,
+          "width": 350,
+          "height": 23.09375,
+          "top": 442.875,
+          "right": 370,
+          "bottom": 465.96875,
+          "left": 20
+        },
+        "label": "Play motion",
+        "hidden": false
+      },
+      "pausedAfter": {
+        "transform": "matrix(1, 0, 0, 1, 0.3, 0.138)",
+        "frame": {
+          "x": 20,
+          "y": 32,
+          "width": 350,
+          "height": 388.875,
+          "top": 32,
+          "right": 370,
+          "bottom": 420.875,
+          "left": 20
+        },
+        "title": {
+          "x": 20,
+          "y": 442.875,
+          "width": 350,
+          "height": 23.09375,
+          "top": 442.875,
+          "right": 370,
+          "bottom": 465.96875,
+          "left": 20
+        },
+        "label": "Play motion",
+        "hidden": false
+      },
+      "resumed": {
+        "transform": "matrix(1, 0, 0, 1, 0.994, -0.146)",
+        "frame": {
+          "x": 20,
+          "y": 32,
+          "width": 350,
+          "height": 388.875,
+          "top": 32,
+          "right": 370,
+          "bottom": 420.875,
+          "left": 20
+        },
+        "title": {
+          "x": 20,
+          "y": 442.875,
+          "width": 350,
+          "height": 23.09375,
+          "top": 442.875,
+          "right": 370,
+          "bottom": 465.96875,
+          "left": 20
+        },
+        "label": "Pause motion",
+        "hidden": false
+      },
+      "offscreen": {
+        "transform": "matrix(1, 0, 0, 1, 0.983, -0.131)",
+        "frame": {
+          "x": 20,
+          "y": -968,
+          "width": 350,
+          "height": 388.875,
+          "top": -968,
+          "right": 370,
+          "bottom": -579.125,
+          "left": 20
+        },
+        "title": {
+          "x": 20,
+          "y": -557.125,
+          "width": 350,
+          "height": 23.09375,
+          "top": -557.125,
+          "right": 370,
+          "bottom": -534.03125,
+          "left": 20
+        },
+        "label": "Pause motion",
+        "hidden": false
+      },
+      "offscreenAfter": {
+        "transform": "matrix(1, 0, 0, 1, 0.983, -0.131)",
+        "frame": {
+          "x": 20,
+          "y": -968,
+          "width": 350,
+          "height": 388.875,
+          "top": -968,
+          "right": 370,
+          "bottom": -579.125,
+          "left": 20
+        },
+        "title": {
+          "x": 20,
+          "y": -557.125,
+          "width": 350,
+          "height": 23.09375,
+          "top": -557.125,
+          "right": 370,
+          "bottom": -534.03125,
+          "left": 20
+        },
+        "label": "Pause motion",
+        "hidden": false
+      },
+      "hidden": {
+        "transform": "matrix(1, 0, 0, 1, 0.857, 0.087)",
+        "frame": {
+          "x": 20,
+          "y": 32,
+          "width": 350,
+          "height": 388.875,
+          "top": 32,
+          "right": 370,
+          "bottom": 420.875,
+          "left": 20
+        },
+        "title": {
+          "x": 20,
+          "y": 442.875,
+          "width": 350,
+          "height": 23.09375,
+          "top": 442.875,
+          "right": 370,
+          "bottom": 465.96875,
+          "left": 20
+        },
+        "label": "Pause motion",
+        "hidden": true
+      },
+      "hiddenAfter": {
+        "transform": "matrix(1, 0, 0, 1, 0.857, 0.087)",
+        "frame": {
+          "x": 20,
+          "y": 32,
+          "width": 350,
+          "height": 388.875,
+          "top": 32,
+          "right": 370,
+          "bottom": 420.875,
+          "left": 20
+        },
+        "title": {
+          "x": 20,
+          "y": 442.875,
+          "width": 350,
+          "height": 23.09375,
+          "top": 442.875,
+          "right": 370,
+          "bottom": 465.96875,
+          "left": 20
+        },
+        "label": "Pause motion",
+        "hidden": true
+      },
+      "reduced": {
+        "transform": "none",
+        "frame": {
+          "x": 20,
+          "y": 32,
+          "width": 350,
+          "height": 388.875,
+          "top": 32,
+          "right": 370,
+          "bottom": 420.875,
+          "left": 20
+        },
+        "title": {
+          "x": 20,
+          "y": 442.875,
+          "width": 350,
+          "height": 23.09375,
+          "top": 442.875,
+          "right": 370,
+          "bottom": 465.96875,
+          "left": 20
+        },
+        "label": "Motion off",
+        "hidden": false
+      }
+    }
+  }
+]
