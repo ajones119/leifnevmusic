@@ -26,7 +26,7 @@ export interface SiteConfig {
   media: { heroBackground: string; heroMusician: string; heroBackgroundSrcSet?: string; heroMusicianSrcSet?: string; heroAlt: string; fishStill: string; fishVideo: string };
 }
 
-// All editable artist content lives here. Empty account URLs deliberately hide links.
+// All editable artist content lives here. Empty account URLs link to / in preview and are omitted in production.
 export const site: SiteConfig = {
   artist: {
     name: 'Leif Nevener', tagline: 'Songs to slow down to',
