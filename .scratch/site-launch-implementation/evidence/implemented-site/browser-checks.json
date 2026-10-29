@@ -1,0 +1,495 @@
+{
+  "widths": [
+    {
+      "width": 320,
+      "initialVideo": false,
+      "heroMoves": true,
+      "fish": {
+        "playing": "true",
+        "muted": true,
+        "time": 0.004658,
+        "paused": false,
+        "videoDisplay": "visible"
+      },
+      "offscreenFish": true,
+      "scrollWidth": 320,
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 355.546875,
+        "top": 0,
+        "right": 320,
+        "bottom": 355.546875,
+        "left": 0
+      },
+      "links": [
+        {
+          "label": "Instagram",
+          "href": "https://www.instagram.com/leif2e/",
+          "width": 64,
+          "height": 58
+        },
+        {
+          "label": "Facebook",
+          "href": "https://www.facebook.com/lnevener/",
+          "width": 64,
+          "height": 58
+        },
+        {
+          "label": "Spotify",
+          "href": "https://open.spotify.com/artist/0Z2G425y7DVu3fIWuyD0D1",
+          "width": 64,
+          "height": 58
+        },
+        {
+          "label": "Cash App",
+          "href": "/",
+          "width": 48,
+          "height": 48
+        },
+        {
+          "label": "Venmo",
+          "href": "/",
+          "width": 48,
+          "height": 48
+        }
+      ],
+      "h1": "Leif Nevener",
+      "samples": 3
+    },
+    {
+      "width": 390,
+      "initialVideo": false,
+      "heroMoves": true,
+      "fish": {
+        "playing": "true",
+        "muted": true,
+        "time": 0.007575,
+        "paused": false,
+        "videoDisplay": "visible"
+      },
+      "offscreenFish": true,
+      "scrollWidth": 390,
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 433.328125,
+        "top": 0,
+        "right": 390,
+        "bottom": 433.328125,
+        "left": 0
+      },
+      "links": [
+        {
+          "label": "Instagram",
+          "href": "https://www.instagram.com/leif2e/",
+          "width": 64,
+          "height": 58
+        },
+        {
+          "label": "Facebook",
+          "href": "https://www.facebook.com/lnevener/",
+          "width": 64,
+          "height": 58
+        },
+        {
+          "label": "Spotify",
+          "href": "https://open.spotify.com/artist/0Z2G425y7DVu3fIWuyD0D1",
+          "width": 64,
+          "height": 58
+        },
+        {
+          "label": "Cash App",
+          "href": "/",
+          "width": 48,
+          "height": 48
+        },
+        {
+          "label": "Venmo",
+          "href": "/",
+          "width": 48,
+          "height": 48
+        }
+      ],
+      "h1": "Leif Nevener",
+      "samples": 3
+    },
+    {
+      "width": 430,
+      "initialVideo": false,
+      "heroMoves": true,
+      "fish": {
+        "playing": "true",
+        "muted": true,
+        "time": 0.007373,
+        "paused": false,
+        "videoDisplay": "visible"
+      },
+      "offscreenFish": true,
+      "scrollWidth": 430,
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 430,
+        "height": 477.765625,
+        "top": 0,
+        "right": 430,
+        "bottom": 477.765625,
+        "left": 0
+      },
+      "links": [
+        {
+          "label": "Instagram",
+          "href": "https://www.instagram.com/leif2e/",
+          "width": 64,
+          "height": 58
+        },
+        {
+          "label": "Facebook",
+          "href": "https://www.facebook.com/lnevener/",
+          "width": 64,
+          "height": 58
+        },
+        {
+          "label": "Spotify",
+          "href": "https://open.spotify.com/artist/0Z2G425y7DVu3fIWuyD0D1",
+          "width": 64,
+          "height": 58
+        },
+        {
+          "label": "Cash App",
+          "href": "/",
+          "width": 48,
+          "height": 48
+        },
+        {
+          "label": "Venmo",
+          "href": "/",
+          "width": 48,
+          "height": 48
+        }
+      ],
+      "h1": "Leif Nevener",
+      "samples": 3
+    },
+    {
+      "width": 800,
+      "initialVideo": false,
+      "heroMoves": true,
+      "fish": {
+        "playing": "true",
+        "muted": true,
+        "time": 0.008562,
+        "paused": false,
+        "videoDisplay": "visible"
+      },
+      "offscreenFish": true,
+      "scrollWidth": 800,
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 888.875,
+        "top": 0,
+        "right": 800,
+        "bottom": 888.875,
+        "left": 0
+      },
+      "links": [
+        {
+          "label": "Instagram",
+          "href": "https://www.instagram.com/leif2e/",
+          "width": 64,
+          "height": 58
+        },
+        {
+          "label": "Facebook",
+          "href": "https://www.facebook.com/lnevener/",
+          "width": 64,
+          "height": 58
+        },
+        {
+          "label": "Spotify",
+          "href": "https://open.spotify.com/artist/0Z2G425y7DVu3fIWuyD0D1",
+          "width": 64,
+          "height": 58
+        },
+        {
+          "label": "Cash App",
+          "href": "/",
+          "width": 48,
+          "height": 48
+        },
+        {
+          "label": "Venmo",
+          "href": "/",
+          "width": 48,
+          "height": 48
+        }
+      ],
+      "h1": "Leif Nevener",
+      "samples": 3
+    },
+    {
+      "width": 1440,
+      "initialVideo": false,
+      "heroMoves": true,
+      "fish": {
+        "playing": "true",
+        "muted": true,
+        "time": 0.007111,
+        "paused": false,
+        "videoDisplay": "visible"
+      },
+      "offscreenFish": true,
+      "scrollWidth": 1440,
+      "frame": {
+        "x": 320,
+        "y": 0,
+        "width": 800,
+        "height": 888.875,
+        "top": 0,
+        "right": 1120,
+        "bottom": 888.875,
+        "left": 320
+      },
+      "links": [
+        {
+          "label": "Instagram",
+          "href": "https://www.instagram.com/leif2e/",
+          "width": 64,
+          "height": 58
+        },
+        {
+          "label": "Facebook",
+          "href": "https://www.facebook.com/lnevener/",
+          "width": 64,
+          "height": 58
+        },
+        {
+          "label": "Spotify",
+          "href": "https://open.spotify.com/artist/0Z2G425y7DVu3fIWuyD0D1",
+          "width": 64,
+          "height": 58
+        },
+        {
+          "label": "Cash App",
+          "href": "/",
+          "width": 48,
+          "height": 48
+        },
+        {
+          "label": "Venmo",
+          "href": "/",
+          "width": 48,
+          "height": 48
+        }
+      ],
+      "h1": "Leif Nevener",
+      "samples": 3
+    }
+  ],
+  "requests": [
+    "http://127.0.0.1:4322/",
+    "http://127.0.0.1:4322/fonts/DMSans-Latin.woff2",
+    "http://127.0.0.1:4322/_astro/index.B-2dw-kz.css",
+    "http://127.0.0.1:4322/media/hero-background-640.webp",
+    "http://127.0.0.1:4322/media/hero-musician-640.webp",
+    "http://127.0.0.1:4322/media/fish-still.webp",
+    "http://127.0.0.1:4322/media/fish-loop.webm",
+    "http://127.0.0.1:4322/",
+    "http://127.0.0.1:4322/fonts/DMSans-Latin.woff2",
+    "http://127.0.0.1:4322/_astro/index.B-2dw-kz.css",
+    "http://127.0.0.1:4322/media/hero-background-640.webp",
+    "http://127.0.0.1:4322/media/hero-musician-640.webp",
+    "http://127.0.0.1:4322/media/fish-still.webp",
+    "http://127.0.0.1:4322/media/fish-loop.webm",
+    "http://127.0.0.1:4322/",
+    "http://127.0.0.1:4322/fonts/DMSans-Latin.woff2",
+    "http://127.0.0.1:4322/_astro/index.B-2dw-kz.css",
+    "http://127.0.0.1:4322/media/hero-background-640.webp",
+    "http://127.0.0.1:4322/media/hero-musician-640.webp",
+    "http://127.0.0.1:4322/media/fish-still.webp",
+    "http://127.0.0.1:4322/media/fish-loop.webm",
+    "http://127.0.0.1:4322/",
+    "http://127.0.0.1:4322/fonts/DMSans-Latin.woff2",
+    "http://127.0.0.1:4322/_astro/index.B-2dw-kz.css",
+    "http://127.0.0.1:4322/media/hero-background-800.webp",
+    "http://127.0.0.1:4322/media/hero-musician-800.webp",
+    "http://127.0.0.1:4322/media/fish-still.webp",
+    "http://127.0.0.1:4322/media/fish-loop.webm",
+    "http://127.0.0.1:4322/",
+    "http://127.0.0.1:4322/fonts/DMSans-Latin.woff2",
+    "http://127.0.0.1:4322/_astro/index.B-2dw-kz.css",
+    "http://127.0.0.1:4322/media/hero-background-800.webp",
+    "http://127.0.0.1:4322/media/hero-musician-800.webp",
+    "http://127.0.0.1:4322/media/fish-still.webp",
+    "http://127.0.0.1:4322/media/fish-loop.webm",
+    "http://127.0.0.1:4322/",
+    "http://127.0.0.1:4322/fonts/DMSans-Latin.woff2",
+    "http://127.0.0.1:4322/_astro/index.B-2dw-kz.css",
+    "http://127.0.0.1:4322/media/hero-background-640.webp",
+    "http://127.0.0.1:4322/media/hero-musician-640.webp",
+    "http://127.0.0.1:4322/media/hero-background-800.webp",
+    "http://127.0.0.1:4322/media/hero-musician-800.webp",
+    "http://127.0.0.1:4322/media/fish-still.webp",
+    "http://127.0.0.1:4322/",
+    "http://127.0.0.1:4322/fonts/DMSans-Latin.woff2",
+    "http://127.0.0.1:4322/_astro/index.B-2dw-kz.css",
+    "http://127.0.0.1:4322/media/hero-background-640.webp",
+    "http://127.0.0.1:4322/media/hero-musician-640.webp",
+    "http://127.0.0.1:4322/media/hero-background-800.webp",
+    "http://127.0.0.1:4322/media/hero-musician-800.webp",
+    "http://127.0.0.1:4322/media/fish-still.webp",
+    "http://127.0.0.1:4322/robots.txt",
+    "http://127.0.0.1:4322/favicon.ico",
+    "http://127.0.0.1:4322/sitemap.xml",
+    "http://127.0.0.1:4322/",
+    "http://127.0.0.1:4322/fonts/DMSans-Latin.woff2",
+    "http://127.0.0.1:4322/_astro/index.B-2dw-kz.css",
+    "http://127.0.0.1:4322/media/hero-background-640.webp",
+    "http://127.0.0.1:4322/media/hero-musician-640.webp",
+    "http://127.0.0.1:4322/media/hero-background-800.webp",
+    "http://127.0.0.1:4322/media/hero-musician-800.webp",
+    "http://127.0.0.1:4322/media/fish-still.webp",
+    "http://127.0.0.1:4322/",
+    "http://127.0.0.1:4322/fonts/DMSans-Latin.woff2",
+    "http://127.0.0.1:4322/_astro/index.B-2dw-kz.css",
+    "http://127.0.0.1:4322/media/hero-background-640.webp",
+    "http://127.0.0.1:4322/media/hero-musician-640.webp",
+    "http://127.0.0.1:4322/media/hero-background-800.webp",
+    "http://127.0.0.1:4322/media/hero-musician-800.webp",
+    "http://127.0.0.1:4322/media/fish-still.webp"
+  ],
+  "errors": [
+    "404 http://127.0.0.1:4322/favicon.ico"
+  ],
+  "motion": {
+    "hiddenStops": true,
+    "reduced": {
+      "transform": "none",
+      "src": null,
+      "playing": null
+    }
+  },
+  "metadata": {
+    "robots": "noindex, nofollow",
+    "title": "Leif Nevener · Oklahoma City musician",
+    "identity": {
+      "@context": "https://schema.org",
+      "@type": "MusicGroup",
+      "name": "Leif Nevener",
+      "description": "Leif Nevener is a musician based in Oklahoma City.",
+      "location": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Oklahoma City",
+          "addressRegion": "OK",
+          "addressCountry": "US"
+        }
+      },
+      "sameAs": [
+        "https://www.instagram.com/leif2e/",
+        "https://www.facebook.com/lnevener/",
+        "https://open.spotify.com/artist/0Z2G425y7DVu3fIWuyD0D1"
+      ]
+    },
+    "canonical": null,
+    "robotsFile": "User-agent: *\nDisallow: /\n",
+    "sitemap": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"></urlset>"
+  },
+  "fallback": {
+    "failedVideo": {
+      "playing": null,
+      "still": "visible",
+      "paused": true
+    },
+    "nojs": {
+      "h1": "Leif Nevener",
+      "links": 5,
+      "src": null,
+      "still": "visible"
+    }
+  },
+  "focus": {
+    "text": "Skip to upcoming shows",
+    "outline": "solid",
+    "rect": {
+      "x": 8,
+      "y": 8,
+      "width": 212.203125,
+      "height": 45.59375,
+      "top": 8,
+      "right": 220.203125,
+      "bottom": 53.59375,
+      "left": 8
+    }
+  },
+  "skip": {
+    "hash": "#shows-title",
+    "active": "shows-title"
+  },
+  "zoom": {
+    "width": 390,
+    "scroll": 390,
+    "controls": [
+      {
+        "x": 20.25,
+        "y": 471.328125,
+        "width": 110.09375,
+        "height": 63.59375,
+        "top": 471.328125,
+        "right": 130.34375,
+        "bottom": 534.921875,
+        "left": 20.25
+      },
+      {
+        "x": 156.34375,
+        "y": 471.328125,
+        "width": 108.03125,
+        "height": 63.59375,
+        "top": 471.328125,
+        "right": 264.375,
+        "bottom": 534.921875,
+        "left": 156.34375
+      },
+      {
+        "x": 290.375,
+        "y": 471.328125,
+        "width": 79.375,
+        "height": 63.59375,
+        "top": 471.328125,
+        "right": 369.75,
+        "bottom": 534.921875,
+        "left": 290.375
+      },
+      {
+        "x": 132,
+        "y": 552.921875,
+        "width": 48,
+        "height": 48,
+        "top": 552.921875,
+        "right": 180,
+        "bottom": 600.921875,
+        "left": 132
+      },
+      {
+        "x": 210,
+        "y": 552.921875,
+        "width": 48,
+        "height": 48,
+        "top": 552.921875,
+        "right": 258,
+        "bottom": 600.921875,
+        "left": 210
+      }
+    ]
+  },
+  "zoom320": {
+    "width": 320,
+    "scroll": 320
+  }
+}

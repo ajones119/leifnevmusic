@@ -1,0 +1,16 @@
+{
+  "fixture": "Isolated synthetic release verification only; not a public site",
+  "passed": true,
+  "checks": [
+    "indexable production HTML",
+    "canonical",
+    "absolute sharing image",
+    "stable MusicGroup identity and supplied sameAs",
+    "no missing-account root fallbacks",
+    "empty show state",
+    "no sample rows",
+    "production robots and sitemap",
+    "root source and preview preserved"
+  ],
+  "productionUrl": "https://release-fixture.invalid"
+}
