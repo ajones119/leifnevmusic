@@ -47,3 +47,7 @@ Open `/proof/bridge-compare.html` for all four photo/type combinations: bridge/s
 ## Bridge depth studies
 
 Open `/proof/depth-compare.html` for the edge-overlap and lettering-behind-Leif alternatives. Direct pages: `/proof/bridge-edge.html` and `/proof/bridge-layered.html`. Both use the existing reconstructed `01-bridge.png` and transparent `02-musician.png` layers from the earlier bridge study; those layers require owner likeness and edge review. The original-photograph comparisons are preserved. The bridge, frame, and lettering remain anchored; only the musician drifts, with optional fine-pointer response. Movement is bounded below 5px at a 460px frame. A pause control appears after enhancement; motion suspends offscreen and when the document is hidden. Reduced motion shows still media, and content remains visible with JavaScript disabled. This is a limited visual experiment authorized for hero review, not completion of the later production-motion ticket.
+
+## Painted walkway comparison
+
+A third option at `/proof/bridge-painted.html` uses an edited copy of the bridge background with LEIF / NEVENER painted onto the concrete in perspective. It retains the existing musician layer and motion behavior; the lettering stays attached to the bridge. The original backgrounds and previous two studies remain unchanged. `/proof/depth-compare.html` now includes all three studies. The artist name also remains readable below the photograph. Provenance is recorded beside `03-bridge-painted-name.png`. User direction/approval is still pending.
