@@ -95,3 +95,7 @@ Replace the decorative fish with the single-cycle scissortail loop and transpare
 ### Static wheat bottom edge — 2026-10-29
 
 A decorative wheat strip follows all footer content outside the800px column and meets the true document bottom. Use the selected transparent wheat-footer-tile.png unchanged, horizontally repeated at its3:1 ratio, height144px on mobile and192px from900px. Preserve weathered cream through its alpha. No wheat animation, blending, opacity adjustment, panel or text overlap; scissortail remains the footer animated accent. Footer bottom padding is replaced by a24px gap before the strip. A1px top clip suppresses a raster-edge artifact in transparent space.
+
+### Selected printed bio photograph — 2026-10-29
+
+Owner selected option4 from the bio portrait comparison. Replace the faded willow treatment with a still, square photograph on a narrow cream mount:12px top/sides,24px bottom, faint border/shadow and-1.8deg rotation. On mobile the mount is min(82%,320px), centred above the bio. At900px and wider, use320px photo +40px gap + remaining copy column, vertically centred. Preserve original photo colours; remove all portrait fading. The hero, bird replay hold and wheat are unchanged. The four-option source study is archived at codex/bio-portrait-study, commit362c907.

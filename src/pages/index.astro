@@ -95,7 +95,7 @@ const tipLinks = [
         </table> : <p>More shows soon.{site.socials.instagram && <> Follow along on <a href={site.socials.instagram}>Instagram</a>.</>}</p>}
       </section>
       <section class="about" aria-labelledby="about-title">
-        {site.artist.portrait.src ? <img class="artist-portrait" src={site.artist.portrait.src} alt={site.artist.portrait.alt} width={site.artist.portrait.width} height={site.artist.portrait.height} loading="lazy" decoding="async" /> : <div class="portrait-placeholder" role="img" aria-label="Placeholder for the artist's final portrait"><span class="placeholder-cross" aria-hidden="true">+</span><span>Room for a portrait</span><span class="placeholder-detail">Final photograph to come</span></div>}
+        {site.artist.portrait.src ? <figure class="portrait-print"><img class="artist-portrait" src={site.artist.portrait.src} alt={site.artist.portrait.alt} width={site.artist.portrait.width} height={site.artist.portrait.height} loading="lazy" decoding="async" /></figure> : <div class="portrait-placeholder" role="img" aria-label="Placeholder for the artist's final portrait"><span class="placeholder-cross" aria-hidden="true">+</span><span>Room for a portrait</span><span class="placeholder-detail">Final photograph to come</span></div>}
         <div class="bio"><h2 id="about-title">A little about Leif</h2>{site.artist.bio.paragraphs.map(paragraph => <p>{paragraph}</p>)}{site.artist.bio.placeholder && <p class="proof-note">Biography placeholder · final words to come</p>}</div>
       </section>
       <footer class="footer">
