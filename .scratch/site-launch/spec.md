@@ -3,6 +3,16 @@
 Status: implementation-ready; mobile visual proof required before full implementation approval.
 Updated: 2026-10-28 (mobile proof refinement; full visual approval pending)
 
+## Approved implementation direction - 2026-10-29
+
+The user approved the tighter painted bridge hero at proof/bridge-painted-tight.html, revision 232f8b5 (evidence 90d7870), and authorized the remaining implementation. This section supersedes conflicting initial visual/motion details below.
+
+- Painted bridge background: output/imagegen/bridge-v2/04-bridge-painted-inset-name.png; musician: 02-musician.png. Tight scene crop: translateY(-10px), scale 1.14, origin 0 30%; shorter frame ratio .9, mobile edge-to-edge from page top, desktop centered max 800px.
+- DM Sans throughout, painted name fixed to the bridge; no Allura/SVG handwriting reveal. Keep a screen-reader H1. Below-image name and tagline are hidden per user request; social-first row, bare payment icons second. No visible sample-date label or account-placeholder note.
+- The user removed the visible pause-motion button. Preserve that choice. Honor reduced motion; suspend ambient motion hidden/offscreen, and defer decorative fish media. Production accessibility reporting must not claim a visible pause control exists.
+- Blank real account URLs hide links and recenter remaining controls; never turn the illustrative proof icons into dead production anchors. Preview examples remain marked in data/caption and blocked by production validation.
+- This approves the composition and authorizes implementation, not publication of unknown show dates, biographies, final portrait, sharing-image or likeness approvals. Keep preview indexing disabled until content/release inputs are ready.
+
 ## Purpose and audience
 
 Build an intimate, minimal artist site for Leif Nevener, an Oklahoma City musician. Social media followers visit for upcoming performances; attendees scan a QR code to tip or find his accounts. Both journeys use the same page. Tipping and social links must work immediately without waiting for decorative animation.

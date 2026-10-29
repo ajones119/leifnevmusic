@@ -20,3 +20,7 @@ The user approved this four-ticket breakdown on 2026-10-28. This approves ticket
 Status labels describe triage readiness, not permission to bypass blocking edges. A blocking implementation ticket is complete only when its acceptance criteria are satisfied and completion evidence is recorded under Comments. Ticket 01 additionally requires explicit user approval of the actual proof recorded with a link to the reviewed revision. Approval of the breakdown or silence does not satisfy that gate.
 
 Work only on the unblocked frontier after implementation is requested. Stop at the visual review gate; downstream implementation must wait for the user's approval. Public launch also requires the owner approvals and verified content in the specification.
+
+## Implementation authorization - 2026-10-29
+
+Ticket 01 is complete: the user approved the tighter painted bridge crop and asked to proceed. Tickets 02 and 03 are now unblocked; 04 follows them. Use approved-handoff.md and the spec's approved-direction overrides. Public launch still requires verified owner content and infrastructure.

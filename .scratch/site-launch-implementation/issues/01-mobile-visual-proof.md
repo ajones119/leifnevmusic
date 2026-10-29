@@ -1,6 +1,7 @@
 # 01: Mobile visual proof and approval
 
-**Status:** needs-info
+**Status:** ready-for-agent
+**Completed:** 2026-10-29, explicit user visual approval
 
 **What to build:** A reviewable mobile composition for Leif Nevener's artist page that settles the visual treatment before complete implementation. Follow the source specification and established design direction.
 
@@ -14,7 +15,7 @@
 - [x] Check 320px and 430px for overflow, clipping, overlap, label readability, and table wrapping; preserve the centered 800px maximum composition at wider widths.
 - [x] Review the layered photograph's face, hands, guitar, and cutout edges; record concerns for release review. Show still/completed-name behavior without requiring production motion implementation in this ticket.
 - [x] Record the proof location, reviewed revision, screenshots, and width-check results under Comments.
-- [ ] Obtain and record the user's explicit approval of that actual visual proof under Comments. Revisions requested by the user are addressed before this checkbox is checked.
+- [x] Obtain and record the user's explicit approval of that actual visual proof under Comments. Revisions requested by the user are addressed before this checkbox is checked.
 
 ## Approval gate
 
@@ -56,3 +57,5 @@ Do not mark this ticket complete or start 02 or 03 until explicit user approval 
 
 - 2026-10-29, framing options 1 and 3: User rejected taller and requested a tighter edge-to-edge crop plus a stronger inset. Added `proof/bridge-painted-tight.html` (14% scene zoom, same shorter frame, edited background with inset lettering) and `proof/bridge-painted-sleeve.html` (12px mobile cream border, square corners, larger photograph). Both are first in `proof/painted-width-compare.html`; older options remain as references. The unchanged musician and existing parallax behavior are preserved, along with hidden caption/tagline and hidden visible motion control. All five widths 320/390/430/800/1440 pass without horizontal document overflow or page/request errors; fonts and all images load. Measured 390px frames: tight 390x433 at x=0/y=0, stronger inset 366x407 at x=12/y=12. Final proof approval remains pending.
 - Options 1 and 3 reviewed revision: 232f8b5ac0017184101440fbdf48629a9fe4982f. [Comparison](../evidence/painted-tight/comparison.png), [tight 390px](../evidence/painted-tight/mobile-proof-390-hero.png), [inset 390px](../evidence/painted-sleeve/mobile-proof-390-hero.png), [measurements](../evidence/painted-tight/frame-measurements.json).
+
+- 2026-10-29: User approved the tighter crop and authorized continuing: "I think i like tighter crop, lets charge agead with that". Approved implementation revision `232f8b5` (evidence commit `90d7870`), reviewed at `/proof/bridge-painted-tight.html`; screenshots are in `../evidence/painted-tight/`. Ticket 01 acceptance is complete. This approval satisfies the dependencies for 02 and 03; content, likeness, sharing-image and release approvals remain separate.

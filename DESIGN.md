@@ -73,3 +73,7 @@ The user generally selected the bridge photograph for the hero. Modern typograph
 ### Painted hero framing study - 2026-10-29
 
 The painted walkway is the user's leading direction. Compare the current inset frame with mobile edge-to-edge and taller edge-to-edge options; the user wants more visual weight. Both wider studies remove top/side image gutters and corner rounding, retaining the centered 800px boundary on desktop. Caption/name and tagline below the image are temporarily hidden, and the visible motion button is removed at the user's request. Final framing and full proof approval remain pending.
+
+## Approved direction - 2026-10-29
+
+The tighter painted bridge hero is approved; continue implementation from proof/bridge-painted-tight.html (232f8b5, evidence 90d7870). This supersedes initial Allura/oval/curved-tagline requirements. Use DM Sans, painted name, hidden semantic H1, no visible caption/tagline or motion button, social-first controls and bare payment icons. Preserve warm palette and table treatment. Production account links must be real or hidden.
