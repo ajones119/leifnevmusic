@@ -1,0 +1,16 @@
+# Approved bridge and decorative fish enhancement
+
+Implemented in `src/scripts/media-motion.ts`, using only the approved data attribute seam in `approved-handoff.md`. The page must import this module once. The painted bridge, frame and name remain fixed; only the foreground musician receives transform updates within the approved `.depth-crop` composition.
+
+- Foreground drift is capped at 3px horizontally and 1.9px vertically at 460px and larger frame widths, decreasing proportionally below that width. Fine-pointer response is included in these limits. No device orientation or touch pointer response.
+- Hero animation freezes offscreen or while the document is hidden, and resumes without accumulating elapsed hidden time. Reduced motion resets the foreground transform to its markup baseline and stops animation. Changing the system preference updates both hero and fish immediately.
+- The fish uses the still by default, including no JavaScript and missing IntersectionObserver. Video `data-src` becomes `src` only within 240px of the viewport, with reduced motion off and the document visible. Actual playback waits for intersection with the viewport. Media is muted, inline and looped.
+- The container receives `data-playing="true"` only on an eligible `playing` event, so the still remains until actual playback. Pause, waiting, ending, rejection or decode error restores the still. Offscreen/hidden states pause playback; returning resumes it. Reduced motion removes the source to cancel ongoing loading and keeps the still. Initial reduced motion never attaches the video source.
+- Stale asynchronous play attempts cannot re-enable playback after state changes. A playback rejection or media error leaves a permanent still fallback for the page load, avoiding repeated failed attempts.
+- There is **no visible pause/resume control**, per the user's explicit override. Hidden/offscreen suspension and reduced motion are supported; do not report a manual control as an accessibility feature.
+
+## Verification handoff
+
+Read AGENTS.md, domain and issue tracker instructions, approved spec/handoff, DESIGN.md, ticket03, and the TDD skill with testing/mocking references. No glossary or ADR directory exists in this checkout. No implementation-coupled motion tests were added: the pre-agreed motion verification seam is real browser behavior on the integrated page. Parent will validate normal motion, bounded foreground movement, stationary bridge/name, reduced preference changes, hidden document, offscreen hero/footer, failed video, no-JavaScript baseline, and actual mobile-device limitations. This module adds no runtime dependency.
+
+Static TypeScript compilation and integrated browser evidence are pending the Astro scaffold integration. Ticket03 stays in progress until those checks are recorded.

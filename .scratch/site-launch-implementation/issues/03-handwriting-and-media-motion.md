@@ -1,6 +1,6 @@
 # 03: Approved bridge depth and fish media motion
 
-**Status:** ready-for-agent
+**Status:** in-progress
 
 **What to build:** A demonstrable enhancement of the approved hero and footer with handwriting, gentle portrait movement, and fish playback that remains usable with reduced motion, paused motion, media failure, or disabled JavaScript. This can be demonstrated against the approved proof independently of 02; final page integration is verified in 04.
 
@@ -21,3 +21,5 @@
 - 2026-10-28: Published from the approved breakdown. Blocked until ticket 01 is complete, including explicit user visual approval.
 
 - 2026-10-29: Ticket 01 explicitly approved. See approved-handoff.md and the spec's Approved implementation direction for overrides. Preview control removal/painted name supersede initial handwriting/pause-button details.
+
+- 2026-10-29: Motion implementation claimed in codex/media-motion. Added src/scripts/media-motion.ts and media-motion-notes.md against approved data attributes. No handwriting or visible pause control per explicit approved overrides. Integrated TypeScript and actual browser verification remain pending parent integration; no implementation-coupled tests added.
