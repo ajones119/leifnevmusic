@@ -51,7 +51,7 @@ export const site: SiteConfig = {
   seoTitle: 'Leif Nevener · Oklahoma City musician',
   seoDescription: 'Find upcoming shows and follow Oklahoma City musician Leif Nevener.',
   socialImage: { src: '/media/social-preview.jpg', alt: 'Leif Nevener carrying an acoustic guitar on a covered bridge', approved: false },
-  footer: { quote: 'Leave a little room\nfor a slower song.', attribution: '' },
+  footer: { quote: 'You can dream\na new dream.', attribution: '' },
   media: { heroMotion: 'layered', heroBackground: '/media/hero-background.webp', heroBackgroundSrcSet: '/media/hero-background-640.webp 640w, /media/hero-background-800.webp 800w, /media/hero-background.webp 1024w', heroMusicianSrcSet: '/media/hero-musician-640.webp 640w, /media/hero-musician-800.webp 800w, /media/hero-musician.webp 1024w', heroMusician: '/media/hero-musician.webp', heroAlt: 'Leif carrying his acoustic guitar on a covered bridge.', footerStill: '/media/scissortail-still.png', footerVideo: '/media/scissortail-loop.webm' },
 };
 
