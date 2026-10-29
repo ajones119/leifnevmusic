@@ -65,3 +65,7 @@ Use generous, deliberate spacing and quiet controls so the portrait, lettering, 
 ### Mobile proof revision 03
 
 Shift the photo framing slightly downward and lengthen the portrait a little. Increase the curved DM Sans tagline from 16 to 19 design-space pixels. Allow the Allura name to overlap the lower photographic fade, retaining the established breathing room before the icons. Visual approval remains pending.
+
+### Hero image selection - 2026-10-29
+
+The user generally selected the bridge photograph for the hero. Modern typography is preferred, with two composition studies still under review: a large name crossing the lower photo edge, and lettering placed between the bridge and musician. Keep the existing warm palette. No final typography/composition or full visual-proof approval has been recorded.
