@@ -1,29 +1,38 @@
-# Content and launch handoff
+# Content and deployment handoff
 
-The approved tighter painted bridge composition is implemented locally. This checkout has no GitHub remote or connected Render service. Nothing has been published. The prepared files do not create infrastructure by themselves.
+## Production configuration
 
-## Content owner
+The canonical origin is `https://leifnevenermusic.com`. Content and account links live in `src/data/site.ts`; Astro, canonical metadata, social images, structured data, robots, and sitemap derive the origin from that config. The owner approved the existing 1200 × 630 clean bridge sharing image on November 6, 2026. The November performances and payment links are owner supplied.
 
-Edit `src/data/site.ts`. The three social profiles are owner supplied. Cash App and Venmo are empty and link to `/` only in previews, as requested; production omits blank optional links. Add their real HTTPS URLs when available.
+`npm run build` now validates and generates **indexable production output**. `npm run build:production` is an equivalent explicit command. Both fail on unresolved production content gates. `npm run build:preview` generates a non-indexed preview, and `npm run dev` also remains non-indexed. Never deploy preview output to the production domain.
 
-Replace or remove all sample shows, approve a factual biography, supply the final lower portrait and alt text, set the actual HTTPS production origin, and review the sharing image before setting its approval flag. Keep explicit `America/Chicago` offsets on each show's start/end; the validator catches impossible dates, reversed times and incorrect daylight-saving offsets. A show remains listed until its end, then disappears at the next successful build. The sample rows are not bookings.
+Before pushing, run:
 
-Run `npm run check`, `npm test`, and `npm run build` for the non-indexed preview. `npm run validate:production` reports missing launch inputs. `npm run build:production` validates them and sets production rendering itself, including canonical/social URLs, indexing, sitemap, and removal of preview-only account fallbacks. It currently stops on five content gates. Do not deploy a preview build as the final site.
+```text
+npm run check
+npm test
+npm run build
+npm run check:seo
+```
 
-The hero includes reconstructed layers and edited floor lettering. Approving the layout does not confirm likeness, hands/guitar detail, background edits, or a final sharing crop. Review `/media/social-preview.jpg` and the hero before launch. The current previews keep the name as a semantic hidden H1, omit the visible below-image caption/tagline and motion button at the owner's request, and still honor reduced motion. Do not describe the page as having a visible pause control or as a complete manual WCAG audit.
+CI also checks the non-indexed preview build before producing and checking production output. SEO checks cover canonical and sharing URLs, indexability, connected JSON-LD, the primary heading, robots, sitemap, and the sharing image asset.
 
-## GitHub and Render setup
+## Render and the live domain
 
-1. Select the owner-controlled GitHub repository and production branch, then push the reviewed code. No remote was supplied in this session.
-2. Review `render.yaml`, or create a Render Static Site with build command `npm ci && npm run build:production`, publish directory `dist`, and Node 24. The blueprint chooses deployment after CI passes. Set the actual origin in the content config before the production build. If a separate preview deployment is wanted, use `npm run build` there; its HTML and robots file block indexing.
-3. Configure the domain/DNS and verify HTTPS, production canonical URL, sharing image, robots and sitemap at the live origin. Confirm the real account/venue links and content after deployment.
-4. Save the service's deploy hook as the GitHub Actions repository secret `RENDER_DEPLOY_HOOK`, never in config, client code, or a committed file. Set repository variable `RENDER_REBUILD_ENABLED` to `true` only after setup. Until enabled, the daily workflow skips its job.
-5. Put the workflow on the default branch. Dispatch `Rebuild upcoming shows` manually, inspect the resulting Render deploy through completion, then verify the next scheduled run. A successful hook request only means a deploy was requested, not completed.
+The GitHub remote is `https://github.com/ajones119/leifnevmusic.git`, branch `main`. The repository's Render blueprint uses `npm ci && npm run build:production`, publishes `dist`, and waits for passing CI. An existing service using `npm run build` will now also generate production output. Direct `astro build` does not set the release environment; use the npm commands.
 
-The prepared schedule runs daily at 11:17 UTC. GitHub schedules can be delayed or dropped, and public-repository schedules can be disabled after inactivity. Monitor Actions and Render failures; daily rebuilds can leave a finished show visible until the next successful build. Exact-time removal is outside this implementation.
+Live checks on November 6, 2026 returned HTTP 200 for the HTTPS origin. HTTP and `www` returned 301 redirects to the canonical HTTPS origin. The deployed page was still a preview: `noindex, nofollow`, robots `Disallow: /`, no canonical metadata, and an empty sitemap. Local changes fix these outputs; this is not evidence of a completed deployment.
 
-Current official documentation, checked 2026-10-29: [Render static sites](https://render.com/docs/static-sites) describes free static hosting with workspace bandwidth/pipeline quotas; confirm the account's current eligibility and usage before setup. [Render deploy hooks](https://render.com/docs/deploy-hooks), [Blueprint reference](https://render.com/docs/blueprint-spec), and [GitHub scheduled workflows](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule) cover the prepared configuration. No account, API key, or paid service was created or used.
+After deploying, verify the homepage no longer includes `noindex`, the canonical points to `https://leifnevenermusic.com/`, `/robots.txt` allows crawling and points to `/sitemap.xml`, the sitemap lists the homepage, and `/media/social-preview.jpg` is accessible. Submit the sitemap in the owner's verified Search Console property and inspect the homepage there. No account login, Search Console verification, or deployment was performed as part of the SEO pass.
 
-## Verification still requiring the owner or devices
+## Show freshness
 
-Final biography, portrait, show facts, production origin, sharing image, and likeness approvals remain pending. Actual iOS Safari and Android Chrome link/media checks were not available in this desktop session. External social pages did not return usable content to the read-only fetcher; the supplied URLs are preserved exactly, but live destination ownership was not independently established. Push deployment, scheduled invocation and live-origin validation remain unverified until infrastructure is selected.
+Keep explicit `America/Chicago` offsets on show timestamps. A performance stays in the table until its end, then disappears at the next successful build. The daily workflow requests a Render rebuild only when repository variable `RENDER_REBUILD_ENABLED` is `true` and secret `RENDER_DEPLOY_HOOK` is configured. A successful hook request is not proof of a completed deployment. Scheduled rebuild configuration and execution still need verification in the hosting account.
+
+## Structured data and remaining checks
+
+The homepage connects `MusicGroup`, `WebSite`, `WebPage`, and `ImageObject` entities. It uses only the configured social profiles as identity links. Event rich-result markup is intentionally absent: Google's event experience requires a separate page focused on each event, while this site has one homepage with a schedule. Do not promise event rich results for the current table.
+
+Physical iOS Safari and Android Chrome checks, live post-deployment indexing checks, and Search Console submission remain outstanding. No ranking or indexing guarantee is implied by passing local checks.
+
+References: [Google canonical URLs](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls), [Google event guidelines](https://developers.google.com/search/docs/appearance/structured-data/event), [Render deploy hooks](https://render.com/docs/deploy-hooks).

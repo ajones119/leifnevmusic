@@ -30,7 +30,7 @@ export interface SiteConfig {
 export const site: SiteConfig = {
   artist: {
     name: 'Leif Nevener', tagline: 'Songs to slow down to',
-    description: 'Leif Nevener is a musician based in Oklahoma City.',
+    description: 'Leif Nevener is a guitarist and musician based in Oklahoma City, Oklahoma.',
     location: { city: 'Oklahoma City', region: 'OK', country: 'US' },
     bio: { paragraphs: ['Originally from Tulsa and now based in Oklahoma City, Leif Nevener is a guitarist and performer with roots in jazz. His experience spans jazz ensembles and guitar work with Lyric Theatre of Oklahoma, including Beautiful: The Carole King Musical and Pageant.'], placeholder: false },
     portrait: { src: '/media/portrait-willow.png', alt: 'Leif seated in the grass playing an acoustic guitar beneath a willow tree', width: 880, height: 869, placeholder: false },
@@ -46,10 +46,10 @@ export const site: SiteConfig = {
     { id: '2026-11-06-two-doors-down', startsAt: '2026-11-06T20:00:00-06:00', endsAt: '2026-11-06T23:00:00-06:00', venue: { name: 'Two Doors Down Wine + Bistro', url: 'https://twodoorsdown.biz/', city: 'Oklahoma City', region: 'OK' }, sample: false },
     { id: '2026-11-14-frenzy-brewing', startsAt: '2026-11-14T19:00:00-06:00', endsAt: '2026-11-14T22:00:00-06:00', venue: { name: 'Frenzy Brewing', url: 'https://www.frenzybrewing.com/', city: 'Edmond', region: 'OK' }, sample: false },
   ],
-  siteUrl: '',
-  seoTitle: 'Leif Nevener · Oklahoma City musician',
-  seoDescription: 'Find upcoming shows and follow Oklahoma City musician Leif Nevener.',
-  socialImage: { src: '/media/social-preview.jpg', alt: 'Leif Nevener carrying an acoustic guitar on a covered bridge', approved: false },
+  siteUrl: 'https://leifnevenermusic.com',
+  seoTitle: 'Leif Nevener | Oklahoma City Guitarist & Live Music',
+  seoDescription: 'Oklahoma City guitarist and musician Leif Nevener. Find upcoming live shows in OKC and Edmond, listen on Spotify, and follow along.',
+  socialImage: { src: '/media/social-preview.jpg', alt: 'Leif Nevener carrying an acoustic guitar on a covered bridge', approved: true },
   footer: { quote: 'You can dream\na new dream.', attribution: '' },
   media: { heroMotion: 'layered', heroBackground: '/media/hero-bridge-clean.webp', heroBackgroundSrcSet: '/media/hero-bridge-clean-640.webp 640w, /media/hero-bridge-clean-800.webp 800w, /media/hero-bridge-clean.webp 1024w', heroMusicianSrcSet: '/media/hero-musician-640.webp 640w, /media/hero-musician-800.webp 800w, /media/hero-musician.webp 1024w', heroMusician: '/media/hero-musician.webp', heroAlt: 'Leif carrying his acoustic guitar on a covered bridge.', footerStill: '/media/scissortail-still.png', footerVideo: '/media/scissortail-loop-cream.mp4' },
 };

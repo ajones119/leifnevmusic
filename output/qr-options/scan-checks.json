@@ -1,0 +1,61 @@
+{
+  "url": "https://leifnevenermusic.com/",
+  "errorCorrection": "H",
+  "quietZoneModules": 4,
+  "checks": [
+    {
+      "design": "01-prairie-print",
+      "width": 1000,
+      "decoded": "https://leifnevenermusic.com/",
+      "passed": true
+    },
+    {
+      "design": "01-prairie-print",
+      "width": 600,
+      "decoded": "https://leifnevenermusic.com/",
+      "passed": true
+    },
+    {
+      "design": "01-prairie-print",
+      "width": 400,
+      "decoded": "https://leifnevenermusic.com/",
+      "passed": true
+    },
+    {
+      "design": "02-guitar-label",
+      "width": 1000,
+      "decoded": "https://leifnevenermusic.com/",
+      "passed": true
+    },
+    {
+      "design": "02-guitar-label",
+      "width": 600,
+      "decoded": "https://leifnevenermusic.com/",
+      "passed": true
+    },
+    {
+      "design": "02-guitar-label",
+      "width": 400,
+      "decoded": "https://leifnevenermusic.com/",
+      "passed": true
+    },
+    {
+      "design": "03-scissortail-seal",
+      "width": 1200,
+      "decoded": "https://leifnevenermusic.com/",
+      "passed": true
+    },
+    {
+      "design": "03-scissortail-seal",
+      "width": 600,
+      "decoded": "https://leifnevenermusic.com/",
+      "passed": true
+    },
+    {
+      "design": "03-scissortail-seal",
+      "width": 400,
+      "decoded": "https://leifnevenermusic.com/",
+      "passed": true
+    }
+  ]
+}

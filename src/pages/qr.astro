@@ -1,0 +1,42 @@
+---
+import { site } from '../data/site';
+import '../styles/site.css';
+import dmSansUrl from '../assets/DMSans-Latin.woff2?url';
+
+const canonical = new URL('/qr/', site.siteUrl).href;
+const description = 'Scan or download Leif Nevener’s scissortail and guitar QR code for upcoming shows, music, and social links.';
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Leif Nevener | QR Code</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content="noindex, follow" />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="preload" href={dmSansUrl} as="font" type="font/woff2" crossorigin />
+  </head>
+  <body>
+    <main class="qr-page">
+      <h1 class="sr-only">Leif Nevener — scan for shows and music</h1>
+      <a class="qr-art-link" href="/" aria-label="Open Leif Nevener’s website">
+        <img class="qr-art" src="/media/leif-nevener-qr.svg" width="1200" height="1200" alt="Scissortail and acoustic guitar surrounding a QR code for https://leifnevenermusic.com/" fetchpriority="high" />
+      </a>
+      <nav class="qr-downloads" aria-label="Download QR artwork">
+        <a href="/media/leif-nevener-qr.png" download="leif-nevener-qr.png">Download PNG</a>
+        <a href="/media/leif-nevener-qr.svg" download="leif-nevener-qr.svg">Download SVG</a>
+      </nav>
+    </main>
+  </body>
+</html>
+
+<style>
+  .qr-page { width: min(100%, 720px); min-height: 100svh; margin-inline: auto; padding: 24px 16px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+  .qr-art-link { display: block; width: min(100%, 640px, max(240px, calc(100svh - 160px))); margin-inline: auto; }
+  .qr-art { display: block; width: 100%; height: auto; }
+  .qr-downloads { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px 24px; margin-top: 20px; }
+  .qr-downloads a { display: inline-flex; align-items: center; min-height: 44px; font-size: 14px; color: var(--deep-moss); }
+</style>

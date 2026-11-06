@@ -1,5 +1,9 @@
 # Leif Nev Music — color direction
 
+## Selected QR page — 2026-11-06
+
+The owner selected QR concept 3, the scissortail seal with acoustic guitar and wheat. `/qr/` displays that unchanged artwork on the site's cream surface, linking to the homepage and offering PNG/SVG downloads. Keep the page quiet and responsive, with no bird-flight animation. The encoded destination is `https://leifnevenermusic.com/`, not the QR utility page. The utility route uses `noindex, follow` and remains outside the sitemap so the artist homepage stays the search destination. The existing code uses moss modules and rounded corner markers with a protected four-module quiet zone.
+
 ## Grass bird flight — local refinement, 2026-11-06
 
 On the first arrival at the actual document bottom, release one centered flock automatically. A one-pixel sentinel at the wheat's bottom edge triggers a one-shot observer that disconnects immediately. Returning to the bottom does not automatically replay; tapping still works. Refresh resets this behavior, with no local storage, session storage, or cookies. Reduced-motion and existing flight/cooldown guards apply to the automatic trigger too.
