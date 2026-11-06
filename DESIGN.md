@@ -1,5 +1,9 @@
 # Leif Nev Music — color direction
 
+## Selected editorial hero — 2026-11-06
+
+The owner selected the middle of the three hero concepts shown in chat: a clean bridge photograph followed by a large, left-aligned, two-line DM Sans name on cream. This supersedes the painted walkway name and hidden H1. Use the existing clean bridge layer, retain the musician and approved slow layered motion, and render the artist name as visible semantic text beneath the photograph. Mobile stays edge-to-edge; desktop retains its framed photograph. Preserve the social/support rows and the remaining page.
+
 ## Direction
 
 Use a warm light scheme inspired by IMGP0627: weathered porch paint, turquoise metalwork, guitar wood, and foliage. Cream and pale stone dominate the page; charcoal supplies readable text. Turquoise is the main action color, with amber and sage used sparingly.
