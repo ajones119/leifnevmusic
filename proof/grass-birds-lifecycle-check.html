@@ -1,0 +1,30 @@
+<!doctype html><meta name="robots" content="noindex"><title>Bird lifecycle verification</title>
+<style>[data-bird-grass]{position:fixed;bottom:0;height:120px;width:100%}.grass-bird{position:fixed;width:26px}svg{width:26px}</style>
+<h1>Bird lifecycle verification</h1><pre id="results">Running…</pre><div data-bird-layer></div><div data-bird-grass><button data-bird-trigger hidden>Send birds flying</button></div><template id="grass-bird">
+      <div class="grass-bird">
+        <svg class="bird-shape" viewBox="0 0 48 28" aria-hidden="true">
+          <path d="M14 19 6 24 16 22Q25 23 31 16L38 14 33 12Q31 8 27 12L22 17Z" />
+          <path class="bird-wing" d="M23 18Q13 13 8 2Q19 3 27 16Z" />
+          <path class="bird-wing bird-wing-far" d="M25 17Q30 8 40 5Q37 15 28 20Z" />
+        </svg>
+      </div>
+    </template>
+<script type="module">
+let reduced=false, hidden=false; const query=new EventTarget(); Object.defineProperty(query,'matches',{get:()=>reduced});
+const original=window.matchMedia.bind(window);window.matchMedia=q=>q.includes('prefers-reduced-motion')?query:original(q);
+Object.defineProperty(document,'hidden',{get:()=>hidden,configurable:true});
+await import('/src/scripts/grass-birds.ts');
+const button=document.querySelector('button'), grass=document.querySelector('[data-bird-grass]');
+const count=()=>document.querySelectorAll('.grass-bird').length, wait=ms=>new Promise(r=>setTimeout(r,ms));
+const results=[]; const check=(name,ok)=>{results.push({name,passed:ok});document.querySelector('#results').textContent=JSON.stringify(results,null,2)};
+await wait(100);check('Initially empty and enhanced',count()===0&&!button.hidden);
+button.click();check('Four birds created',count()===4);button.click();check('Repeated activation does not stack',count()===4);
+await wait(3000);check('Completed flight removes birds',count()===0);button.click();check('One second cooldown rejects activation',count()===0);
+await wait(1100);button.click();check('Replay after cooldown',count()===4);
+reduced=true;query.dispatchEvent(new Event('change'));check('Reduced motion clears birds and disables trigger',count()===0&&button.disabled);
+reduced=false;query.dispatchEvent(new Event('change'));await wait(1100);button.click();check('Motion preference can re-enable effect',count()===4);
+hidden=true;document.dispatchEvent(new Event('visibilitychange'));check('Hidden page clears flock',count()===0);hidden=false;document.dispatchEvent(new Event('visibilitychange'));
+await wait(1100);button.click();grass.style.display='none';await wait(100);check('Grass leaving view clears flock',count()===0);
+grass.style.display='block';await wait(1100);button.click();window.dispatchEvent(new Event('resize'));check('Resize clears flock',count()===0);
+document.title=results.every(r=>r.passed)?'PASS: bird lifecycle':'FAIL: bird lifecycle';
+</script>

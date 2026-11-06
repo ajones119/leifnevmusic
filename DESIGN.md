@@ -1,5 +1,11 @@
 # Leif Nev Music — color direction
 
+## Grass bird flight — local refinement, 2026-11-06
+
+On the first arrival at the actual document bottom, release one centered flock automatically. A one-pixel sentinel at the wheat's bottom edge triggers a one-shot observer that disconnects immediately. Returning to the bottom does not automatically replay; tapping still works. Refresh resets this behavior, with no local storage, session storage, or cookies. Reduced-motion and existing flight/cooldown guards apply to the automatic trigger too.
+
+The bottom wheat remains still until tapped or activated by keyboard. Release four small moss SVG bird silhouettes near the tap (center for keyboard), with staggered takeoff, individual wingbeats, and a 2–3 second rising flight toward the nearest screen edge. Keep them behind page content and outside the wheat clip. Allow one flock at a time and one second of quiet before replay. Respect reduced motion and clear flights when the page is hidden, wheat leaves view, or the viewport changes. The grass button has an accessible name and inset focus ring, with no added visible copy. No video, GIF, audio, autoplay, or dependency is needed. This interaction awaits local visual refinement before pushing.
+
 ## Selected editorial hero — 2026-11-06
 
 The owner selected the middle of the three hero concepts shown in chat: a clean bridge photograph followed by a large, left-aligned, two-line DM Sans name on cream. This supersedes the painted walkway name and hidden H1. Use the existing clean bridge layer, retain the musician and approved slow layered motion, and render the artist name as visible semantic text beneath the photograph. Mobile stays edge-to-edge; desktop retains its framed photograph. Preserve the social/support rows and the remaining page.
