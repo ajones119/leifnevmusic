@@ -43,9 +43,8 @@ export const site: SiteConfig = {
   tips: { cashApp: 'https://cash.app/$LeifNevener', venmo: 'https://venmo.com/Leif-Nevener' },
   timezone: 'America/Chicago',
   shows: [
-    { id: 'preview-nov-06', startsAt: '2026-11-06T19:00:00-06:00', endsAt: '2026-11-06T21:00:00-06:00', venue: { name: 'The listening room', url: '', city: 'Oklahoma City', region: 'OK' }, sample: true },
-    { id: 'preview-nov-14', startsAt: '2026-11-14T18:00:00-06:00', endsAt: '2026-11-14T20:00:00-06:00', venue: { name: 'A neighborhood coffeehouse', url: '', city: 'Oklahoma City', region: 'OK' }, sample: true },
-    { id: 'preview-dec-05', startsAt: '2026-12-05T17:00:00-06:00', endsAt: '2026-12-05T19:00:00-06:00', venue: { name: 'An evening on the porch', url: '', city: 'Oklahoma City', region: 'OK' }, sample: true },
+    { id: '2026-11-06-two-doors-down', startsAt: '2026-11-06T20:00:00-06:00', endsAt: '2026-11-06T23:00:00-06:00', venue: { name: 'Two Doors Down Wine + Bistro', url: 'https://twodoorsdown.biz/', city: 'Oklahoma City', region: 'OK' }, sample: false },
+    { id: '2026-11-14-frenzy-brewing', startsAt: '2026-11-14T19:00:00-06:00', endsAt: '2026-11-14T22:00:00-06:00', venue: { name: 'Frenzy Brewing', url: 'https://www.frenzybrewing.com/', city: 'Edmond', region: 'OK' }, sample: false },
   ],
   siteUrl: '',
   seoTitle: 'Leif Nevener · Oklahoma City musician',
