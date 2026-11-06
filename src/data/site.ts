@@ -40,7 +40,7 @@ export const site: SiteConfig = {
     facebook: 'https://www.facebook.com/lnevener/',
     spotify: 'https://open.spotify.com/artist/0Z2G425y7DVu3fIWuyD0D1',
   },
-  tips: { cashApp: '', venmo: '' },
+  tips: { cashApp: 'https://cash.app/$LeifNevener', venmo: 'https://venmo.com/Leif-Nevener' },
   timezone: 'America/Chicago',
   shows: [
     { id: 'preview-nov-06', startsAt: '2026-11-06T19:00:00-06:00', endsAt: '2026-11-06T21:00:00-06:00', venue: { name: 'The listening room', url: '', city: 'Oklahoma City', region: 'OK' }, sample: true },
