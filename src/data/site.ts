@@ -43,8 +43,9 @@ export const site: SiteConfig = {
   tips: { cashApp: 'https://cash.app/$LeifNevener', venmo: 'https://venmo.com/Leif-Nevener' },
   timezone: 'America/Chicago',
   shows: [
-    { id: '2026-11-06-two-doors-down', startsAt: '2026-11-06T20:00:00-06:00', endsAt: '2026-11-06T23:00:00-06:00', venue: { name: 'Two Doors Down Wine + Bistro', url: 'https://twodoorsdown.biz/', city: 'Oklahoma City', region: 'OK' }, sample: false },
-    { id: '2026-11-14-frenzy-brewing', startsAt: '2026-11-14T19:00:00-06:00', endsAt: '2026-11-14T22:00:00-06:00', venue: { name: 'Frenzy Brewing', url: 'https://www.frenzybrewing.com/', city: 'Edmond', region: 'OK' }, sample: false },
+    // { id: '2026-11-06-two-doors-down', startsAt: '2026-11-06T20:00:00-06:00', endsAt: '2026-11-06T23:00:00-06:00', venue: { name: 'Two Doors Down Wine + Bistro', url: 'https://twodoorsdown.biz/', city: 'Oklahoma City', region: 'OK' }, sample: false },
+    // { id: '2026-11-14-frenzy-brewing', startsAt: '2026-11-14T19:00:00-06:00', endsAt: '2026-11-14T22:00:00-06:00', venue: { name: 'Frenzy Brewing', url: 'https://www.frenzybrewing.com/', city: 'Edmond', region: 'OK' }, sample: false },
+    { id: '2026-12-05-two-doors-down', startsAt: '2026-12-05T20:00:00-06:00', endsAt: '2026-12-05T23:00:00-06:00', venue: { name: 'Two Doors Down Wine + Bistro', url: 'https://twodoorsdown.biz/', city: 'Oklahoma City', region: 'OK' }, sample: false },
   ],
   siteUrl: 'https://leifnevenermusic.com',
   seoTitle: 'Leif Nevener | Oklahoma City Guitarist & Live Music',
