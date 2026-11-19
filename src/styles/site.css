@@ -59,3 +59,22 @@ body{isolation:isolate}
 .bird-wing{transform-box:view-box;transform-origin:25px 18px}
 .bird-wing-far{opacity:.8}
 @media(prefers-reduced-motion:reduce){.bird-flight-layer{display:none}}
+
+/* Name intro: a 60s title-card entrance, played once when the name scrolls into view.
+   "Leif" springs up out of the baseline; a gun-barrel dot leads "Nevener" in on a swing,
+   irises out, then a quick groovy colour wave settles everything back to charcoal. */
+.artist-name .name-line{width:fit-content}
+.artist-name .name-char{display:inline-block}
+[data-name-intro] .name-line:first-child{clip-path:inset(-.4em -.4em 0 -.4em)}
+[data-name-intro] .name-line:last-child{position:relative}
+[data-name-intro=pending] .name-char,[data-name-intro=play] .name-char{animation-fill-mode:both;animation-play-state:paused}
+[data-name-intro=play] .name-char,[data-name-intro=play] .name-line:last-child::after{animation-play-state:running}
+[data-name-intro=pending] .name-line:first-child .name-char,[data-name-intro=play] .name-line:first-child .name-char{transform-origin:0 100%;animation:name-rise 760ms cubic-bezier(.2,.75,.25,1) calc(120ms + var(--i)*75ms) both,name-groove 900ms ease-in-out calc(1500ms + var(--i)*45ms) both}
+[data-name-intro=pending] .name-line:last-child .name-char,[data-name-intro=play] .name-line:last-child .name-char{transform-origin:50% 100%;animation:name-swing 720ms cubic-bezier(.22,.8,.3,1) calc(520ms + var(--i)*55ms) both,name-groove 900ms ease-in-out calc(1680ms + var(--i)*45ms) both}
+[data-name-intro=pending] .name-line:last-child::after,[data-name-intro=play] .name-line:last-child::after{content:'';position:absolute;left:calc(100% + .06em);bottom:.14em;width:.16em;height:.16em;border-radius:50%;background:var(--guitar-amber);box-shadow:0 0 0 0 var(--guitar-amber);pointer-events:none;animation:name-barrel 1500ms cubic-bezier(.5,0,.2,1) 380ms both;animation-play-state:paused}
+[data-name-intro=play] .name-line:last-child::after{animation-play-state:running}
+@keyframes name-rise{0%{transform:translateY(112%) rotate(9deg)}58%{transform:translateY(-7%) rotate(-2.5deg)}80%{transform:translateY(1.5%) rotate(.6deg)}100%{transform:none}}
+@keyframes name-swing{0%{opacity:0;transform:translateX(-.7em) skewX(26deg)}35%{opacity:1}62%{transform:translateX(.04em) skewX(-9deg)}82%{transform:translateX(-.01em) skewX(2.5deg)}100%{opacity:1;transform:none}}
+@keyframes name-groove{0%,100%{color:var(--porch-charcoal)}30%{color:var(--porch-turquoise)}62%{color:var(--guitar-amber)}}
+@keyframes name-barrel{0%{opacity:0;transform:translateX(-5.4em)}8%{opacity:1}52%{opacity:1;transform:none;background:var(--guitar-amber);box-shadow:0 0 0 0 var(--guitar-amber)}66%{opacity:1;transform:scale(.7);background:transparent;box-shadow:0 0 0 .04em var(--guitar-amber)}100%{opacity:0;transform:scale(3.2);background:transparent;box-shadow:0 0 0 .012em var(--guitar-amber)}}
+@media(prefers-reduced-motion:reduce){[data-name-intro] .name-char,[data-name-intro] .name-line:last-child::after{animation:none!important}[data-name-intro] .name-line:last-child::after{display:none}}
